@@ -1,0 +1,3372 @@
+/*--------------------------------------------------------------
+20. color-switcher-section
+--------------------------------------------------------------*/
+
+.color-switcher-wrap {
+    .color-switcher-item {
+        position: fixed;
+        left: -170px;
+        top: 250px;
+        width: 170px;
+        box-shadow: 0px 0px 3.1px 3.9px rgba(28, 31, 86, 0.04);
+        background: $white;
+        z-index: 99;
+        transition: all .3s;
+        padding: 15px;
+        padding-bottom: 10px;
+        text-align: center;
+        border-bottom-right-radius: 20px;
+        z-index: 99999;
+        padding-top: 10px;
+
+        &.color-switcher-open {
+            left: 0px;
+        }
+
+        .color-toggle-btn {
+            position: absolute;
+            right: -50px;
+            top: 0px;
+            width: 50px;
+            height: 50px;
+            line-height: 62px;
+            background: $white;
+            box-shadow: 0px 0px 6.1px 3.9px rgba(28, 31, 86, 0.06);
+            text-align: center;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            z-index: 9999;
+            cursor: pointer;
+
+            i {
+                font-size: 30px;
+                color: $dark-gray;
+                -webkit-animation-name: rotate;
+                animation-name: rotate;
+                -webkit-animation-duration: 10s;
+                animation-duration: 10s;
+                -webkit-animation-iteration-count: infinite;
+                animation-iteration-count: infinite;
+                -webkit-animation-timing-function: linear;
+                animation-timing-function: linear
+            }
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                &.btn {
+                    width: 40px;
+                    height: 30px;
+                    background: $theme-primary-color;
+                    margin-bottom: 10px;
+                    position: relative;
+                    flex-basis: 25%;
+                    margin: 5px;
+
+                    &.btn2 {
+                        background: $theme-color-2;
+                    }
+
+                    &.btn3 {
+                        background: $theme-color-3;
+                    }
+
+                    &.btn4 {
+                        background: $theme-color-4;
+                    }
+
+                    &.btn5 {
+                        background: $theme-color-5;
+                    }
+
+                    &.btn6 {
+                        background: $theme-color-6;
+                    }
+
+                    &.btn7 {
+                        background: $theme-color-7;
+                    }
+
+                    &.btn8 {
+                        background: $theme-color-8;
+                    }
+
+                    &.btn9 {
+                        background: $theme-color-9;
+                    }
+
+                    &.btn10 {
+                        background: $theme-color-10;
+                    }
+
+                    &.btn11 {
+                        background: $theme-color-11;
+                    }
+
+                    &.btn12 {
+                        background: $theme-color-12;
+                    }
+
+                    &.active {
+                        &:before {
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            color: $white;
+                            content: "\e64c";
+                            transform: translate(-50%, -50%);
+                            font-family: 'themify';
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+// color-change
+
+// color-2 here
+
+.color2 {
+
+    .theme-btn,
+    .theme-btn-s3,
+    .theme-btn-s4 {
+        background: $theme-color-2;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background: $theme-color-2;
+
+            &:after {
+                border: 1px solid $theme-color-2;
+            }
+        }
+    }
+
+    .view-cart-btn {
+        background: $theme-color-2;
+
+        &:hover {
+            background-color: darken($theme-color-2, 8%);
+        }
+
+        &.s1 {
+            background: transparentize($theme-color-2, .8);
+            color: $theme-color-2;
+        }
+
+    }
+
+
+    .wpo-site-header {
+        .navbar-header {
+            .logo {
+                color: $theme-color-2;
+            }
+        }
+
+        #navbar {
+            ul {
+                li {
+                    a {
+                        &::before {
+                            background: $theme-color-2;
+                        }
+
+                        &:hover,
+                        &:focus {
+                            color: $theme-color-2;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mini-cart .cart-count {
+            background: $theme-color-2;
+        }
+
+        .mini-checkout-price span {
+            color: $theme-color-2;
+        }
+    }
+
+    .static-hero .slide-title h2 span {
+        color: $theme-color-2;
+    }
+
+    .couple-section ul li a {
+        color: $theme-color-2;
+    }
+
+    .wpo-story-section .tab-area .nav-tabs .nav-item .nav-link.active {
+        color: $theme-color-2;
+    }
+
+    .wpo-story-section .tab-area .wpo-story-item .wpo-story-content .wpo-story-content-inner span {
+        color: $theme-color-2;
+    }
+
+    .back-to-top {
+        background-color: transparentize($theme-color-2, .7);
+        border: 2px solid $theme-color-2;
+
+        &:hover {
+            background: $theme-color-2;
+        }
+    }
+
+
+    .theme-btn,
+    .view-cart-btn,
+    .theme-btn-s3,
+    .theme-btn-s4 {
+        color: $white;
+    }
+
+
+    .wpo-site-header .social-info ul li a i:before,
+    .mini-cart-content .mini-cart-item-des a:hover,
+    .wpo-hero-section .wpo-hero-items .owl-item.active.center .wpo-hero-img .wpo-hero-text h2,
+    .wpo-Service-section .wpo-Service-item .wpo-Service-text a:hover,
+    .wpo-Service-section-s2 .wpo-Service-item .wpo-Service-text a:hover,
+    .wpo-Service-section-s3 .wpo-Service-item .wpo-Service-text a:hover,
+    .wpo-testimonial-section .wpo-testimonial-items i,
+    .wpo-testimonial-section .slick-dots li.slick-active button:before,
+    .wpo-portfolio-section .grid .img-holder .portfolio-content h4 a:hover,
+    .wpo-portfolio-section-s4 .grid .img-holder .portfolio-content h4 a:hover,
+    .wpo-banner-section h4,
+    .wpo-team-section .wpo-team-wrap .wpo-team-item .wpo-team-text h3 a:hover,
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-text h3 a:hover,
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-img ul li a,
+    .wpo-blog-section .wpo-blog-items .wpo-blog-grids .grid .wpo-blog-item .wpo-blog-content h2 a:hover,
+    .wpo-blog-section-s2 .wpo-blog-items .wpo-blog-grids .grid .wpo-blog-item .wpo-blog-content h2 a:hover,
+    .wpo-blog-section-s3 .wpo-blog-items .wpo-blog-grids .grid .wpo-blog-item .wpo-blog-content h2 a:hover,
+    .wpo-site-footer .footer-link ul li a:hover,
+    .wpo-wedding-date #clock .time,
+    .wpo-couple-section .couple-area .couple-item .couple-text ul li a,
+    .wpo-couple-section-s2 .couple-area .couple-item .couple-text ul li a,
+    .wpo-couple-section-s3 .couple-area .couple-item .couple-text ul li a,
+    .wpo-couple-section-s4 .couple-area .couple-item .couple-text ul li a,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text ul li a,
+    .static-hero-s4 .wpo-event-item .wpo-event-text ul li a,
+    .forget-btn a,
+    .or span,
+    .subText a,
+    .wpo-shop-sidebar .widget_price_filter .filter-price button,
+    .wpo-checkout-area .cout-order-area .oreder-item ul .o-bottom,
+    .wpo-shop-single-section .product-details .price,
+    .blog-sidebar .category-widget ul a:hover,
+    .blog-sidebar .category-widget ul li:hover:before,
+    .wpo-blog-pg-section .post a.read-more:hover,
+    .wpo-blog-pg-section .post h3 a:hover,
+    .wpo-blog-pg-section .entry-meta ul li a:hover,
+    .blog-sidebar .recent-post-widget .post h4 a:hover,
+    .wpo-blog-single-section .tag-share .tag a:hover,
+    .wpo-blog-single-section .tag-share-s2 .tag a:hover,
+    .wpo-blog-single-section .author-box .social-link a:hover,
+    .wpo-blog-single-section .more-posts a:hover .post-control-link,
+    .wpo-blog-single-section .comments-area .comment-reply-link:hover,
+    .blog-sidebar .about-widget a:hover {
+        color: $theme-color-2;
+    }
+
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-text:before,
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-img ul li a:hover,
+    .wpo-site-footer .link-widget ul li a:hover,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:checked+label:after,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:not(:checked)+label:after,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:checked+label:after,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:not(:checked)+label:after,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:checked+label:after,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:not(:checked)+label:after,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .theme-btn,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .view-cart-btn,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .theme-btn,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .view-cart-btn,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .theme-btn,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .view-cart-btn,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text ul li a:before,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-img::before,
+    .static-hero-s4 .wpo-event-item .wpo-event-text ul li a:before,
+    .wpo-shop-sidebar .search-widget form button,
+    .wpo-shop-single-section .product-details ul li:before,
+    .wpo-shop-single-section .product-details .product-option .theme-btn:hover,
+    .wpo-shop-single-section .product-details .product-option .view-cart-btn:hover,
+    .wpo-shop-single-section .product-details .product-option .product-row>div:last-child .theme-btn:hover,
+    .wpo-shop-single-section .product-details .product-option .product-row>div:last-child .view-cart-btn:hover,
+    .wpo-accountForm .wpo-accountBtn,
+    .wpo-shop-single-section .product-details .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-up:hover,
+    .wpo-shop-single-section .product-details .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-down:hover,
+    .wpo-shop-single-section .product-info .nav-tabs a:before,
+    .wpo-checkout-area .create-account button:hover,
+    .cart-area .cart-wrap .action a:hover,
+    .cart-area .submit-btn-area button:hover,
+    .cart-area .cart-wrap .action li.c-btn a,
+    .blog-sidebar .search-widget form button,
+    .blog-sidebar .widget h3:before,
+    .wpo-blog-pg-section .entry-meta ul li+li:before,
+    .blog-sidebar .tag-widget ul li a:hover,
+    .pagination-wrapper .pg-pagination .active a,
+    .pagination-wrapper .pg-pagination li a:hover,
+    .wpo-blog-pg-section .format-gallery .owl-nav [class*=owl-]:hover,
+    .wpo-blog-single-section .tag-share .tag a:hover,
+    .wpo-blog-single-section .tag-share-s2 .tag a:hover,
+    .wpo-blog-single-section .entry-meta ul li+li:before,
+    .wpo-site-header #navbar>ul>li .sub-menu a:after,
+    .wpo-site-header .mobail-menu button {
+        background: $theme-color-2;
+    }
+
+
+    .wpo-section-title h2::after,
+    .wpo-section-title-s2 h2::after,
+    .wpo-section-title h2::before,
+    .wpo-section-title-s2 h2::before,
+    .wpo-story-section-s4 .wpo-story-wrap .wpo-story-item .wpo-story-content-wrap .wpo-story-content-img:before,
+    .wpo-story-section-s4 .wpo-story-wrap .wpo-story-item .wpo-story-img-wrap:before,
+    .wpo-checkout-area .coupon,
+    .blog-sidebar .about-widget,
+    .blog-sidebar .search-widget input,
+    .blog-sidebar .category-widget ul a span,
+    .wpo-site-footer,
+    .pagination-wrapper .pg-pagination li a,
+    .wpo-blog-single-section .post blockquote,
+    .wpo-blog-single-section .tag-share .tag a,
+    .wpo-blog-single-section .tag-share-s2 .tag a,
+    .blog-sidebar .tag-widget ul li a,
+    .wpo-blog-pg-section .format-standard,
+    .wpo-blog-pg-section .format-quote {
+        background: transparentize($theme-color-2, .9);
+    }
+
+    .wpo-pricing-section .wpo-pricing-wrap .wpo-pricing-item:before,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item .round-1,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item .round-2,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item .round-3,
+    .wpo-blog-single-section .comment-respond .form-submit input {
+        background: transparentize($theme-color-2, .5);
+    }
+
+    .wpo-blog-pg-section .format-standard:before {
+        color: transparentize($theme-color-2, .8);
+    }
+
+    .wpo-event-section .wpo-event-wrap .wpo-event-item,
+    .wpo-accountForm .wpo-accountBtn,
+    .wpo-checkout-area .coupon label,
+    .wpo-checkout-area .s2 .coupon-3,
+    .wpo-checkout-area .s2.coupon-2 .coupon-3 label,
+    .wpo-checkout-area .s1.active-border .coupon-active label,
+    .wpo-checkout-area .s3.coupon-2 .coupon-3 label,
+    .wpo-couple-section-s3 .couple-area .couple-item .couple-img::before,
+    .wpo-story-section-s3 .wpo-story-wrap .wpo-story-item .wpo-story-img-wrap::before,
+    .wpo-couple-section-s3 .couple-area .couple-item .couple-img::after {
+        border-color: $theme-color-2;
+    }
+
+    .wpo-contact-section .wpo-contact-section-wrapper .wpo-contact-form-area,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text h2,
+    .wpo-blog-single-section .post blockquote:before,
+    .wpo-fun-fact-section .wpo-fun-fact-grids,
+    .wpo-fun-fact-section-s2 .wpo-fun-fact-grids,
+    .wpo-contact-section .wpo-contact-section-wrapper .wpo-contact-form-area .form-control,
+    .wpo-contact-section-s2 .wpo-contact-section-wrapper .wpo-contact-form-area .form-control,
+    .wpo-team-section .wpo-team-wrap .wpo-team-item .wpo-team-img:before,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item,
+    .wpo-site-footer .wpo-upper-footer::before {
+        border-color: transparentize($theme-color-2, .6);
+    }
+
+    .wpo-header-style-3 .navigation.sticky-on,
+    .wpo-contact-section .wpo-contact-section-wrapper,
+    .wpo-contact-section-s2 .wpo-contact-section-wrapper,
+    .wpo-service-details-text-3 {
+        background-color: darken($theme-color-2, 6%);
+    }
+
+    .wpo-pricing-section-s2 .wpo-section-title h2,
+    .wpo-site-footer .wpo-lower-footer .copyright a {
+        color: $dark-gray;
+    }
+
+    .wpo-blog-single-section .tag-share .tag a:hover {
+        color: $white;
+    }
+
+    @media (max-width: 991px) {
+        .wpo-site-header #navbar {
+            background: darken($theme-color-2, 2%);
+        }
+
+        .wpo-site-header #navbar>ul .menu-item-has-children>a:before {
+            background: none !important;
+        }
+
+        .wpo-site-header #navbar ul li a:hover,
+        .wpo-site-header #navbar ul li a:focus {
+            color: $white;
+        }
+    }
+
+    .wpo-blog-single-section .tag-share-s2 .tag a {
+        background: none !important;
+    }
+
+}
+
+// color-3 here
+
+.color3 {
+
+    .theme-btn,
+    .theme-btn-s3,
+    .theme-btn-s4 {
+        background: $theme-color-3;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background: $theme-color-3;
+
+            &:after {
+                border: 1px solid $theme-color-3;
+            }
+        }
+    }
+
+    .view-cart-btn {
+        background: $theme-color-3;
+
+        &:hover {
+            background-color: darken($theme-color-3, 8%);
+        }
+
+        &.s1 {
+            background: transparentize($theme-color-3, .8);
+            color: $theme-color-3;
+        }
+
+    }
+
+
+    .wpo-site-header {
+        .navbar-header {
+            .logo {
+                color: $theme-color-3;
+            }
+        }
+
+        #navbar {
+            ul {
+                li {
+                    a {
+                        &::before {
+                            background: $theme-color-3;
+                        }
+
+                        &:hover,
+                        &:focus {
+                            color: $theme-color-3;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mini-cart .cart-count {
+            background: $theme-color-3;
+        }
+
+        .mini-checkout-price span {
+            color: $theme-color-3;
+        }
+    }
+
+    .static-hero .slide-title h2 span {
+        color: $theme-color-3;
+    }
+
+    .couple-section ul li a {
+        color: $theme-color-3;
+    }
+
+    .wpo-story-section .tab-area .nav-tabs .nav-item .nav-link.active {
+        color: $theme-color-3;
+    }
+
+    .wpo-story-section .tab-area .wpo-story-item .wpo-story-content .wpo-story-content-inner span {
+        color: $theme-color-3;
+    }
+
+    .back-to-top {
+        background-color: transparentize($theme-color-3, .7);
+        border: 2px solid $theme-color-3;
+
+        &:hover {
+            background: $theme-color-3;
+        }
+    }
+
+
+    .theme-btn,
+    .view-cart-btn,
+    .theme-btn-s3,
+    .theme-btn-s4 {
+        color: $white;
+    }
+
+
+    .wpo-site-header .social-info ul li a i:before,
+    .mini-cart-content .mini-cart-item-des a:hover,
+    .wpo-hero-section .wpo-hero-items .owl-item.active.center .wpo-hero-img .wpo-hero-text h2,
+    .wpo-Service-section .wpo-Service-item .wpo-Service-text a:hover,
+    .wpo-Service-section-s2 .wpo-Service-item .wpo-Service-text a:hover,
+    .wpo-Service-section-s3 .wpo-Service-item .wpo-Service-text a:hover,
+    .wpo-testimonial-section .wpo-testimonial-items i,
+    .wpo-testimonial-section .slick-dots li.slick-active button:before,
+    .wpo-portfolio-section .grid .img-holder .portfolio-content h4 a:hover,
+    .wpo-portfolio-section-s4 .grid .img-holder .portfolio-content h4 a:hover,
+    .wpo-banner-section h4,
+    .wpo-team-section .wpo-team-wrap .wpo-team-item .wpo-team-text h3 a:hover,
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-text h3 a:hover,
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-img ul li a,
+    .wpo-blog-section .wpo-blog-items .wpo-blog-grids .grid .wpo-blog-item .wpo-blog-content h2 a:hover,
+    .wpo-blog-section-s2 .wpo-blog-items .wpo-blog-grids .grid .wpo-blog-item .wpo-blog-content h2 a:hover,
+    .wpo-blog-section-s3 .wpo-blog-items .wpo-blog-grids .grid .wpo-blog-item .wpo-blog-content h2 a:hover,
+    .wpo-site-footer .footer-link ul li a:hover,
+    .wpo-wedding-date #clock .time,
+    .wpo-couple-section .couple-area .couple-item .couple-text ul li a,
+    .wpo-couple-section-s2 .couple-area .couple-item .couple-text ul li a,
+    .wpo-couple-section-s3 .couple-area .couple-item .couple-text ul li a,
+    .wpo-couple-section-s4 .couple-area .couple-item .couple-text ul li a,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text ul li a,
+    .static-hero-s4 .wpo-event-item .wpo-event-text ul li a,
+    .forget-btn a,
+    .or span,
+    .subText a,
+    .wpo-shop-sidebar .widget_price_filter .filter-price button,
+    .wpo-checkout-area .cout-order-area .oreder-item ul .o-bottom,
+    .wpo-shop-single-section .product-details .price,
+    .blog-sidebar .category-widget ul a:hover,
+    .blog-sidebar .category-widget ul li:hover:before,
+    .wpo-blog-pg-section .post a.read-more:hover,
+    .wpo-blog-pg-section .post h3 a:hover,
+    .wpo-blog-pg-section .entry-meta ul li a:hover,
+    .blog-sidebar .recent-post-widget .post h4 a:hover,
+    .wpo-blog-single-section .tag-share .tag a:hover,
+    .wpo-blog-single-section .tag-share-s2 .tag a:hover,
+    .wpo-blog-single-section .author-box .social-link a:hover,
+    .wpo-blog-single-section .more-posts a:hover .post-control-link,
+    .wpo-blog-single-section .comments-area .comment-reply-link:hover,
+    .blog-sidebar .about-widget a:hover {
+        color: $theme-color-3;
+    }
+
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-text:before,
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-img ul li a:hover,
+    .wpo-site-footer .link-widget ul li a:hover,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:checked+label:after,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:not(:checked)+label:after,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:checked+label:after,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:not(:checked)+label:after,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:checked+label:after,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:not(:checked)+label:after,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .theme-btn,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .view-cart-btn,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .theme-btn,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .view-cart-btn,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .theme-btn,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .view-cart-btn,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text ul li a:before,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-img::before,
+    .static-hero-s4 .wpo-event-item .wpo-event-text ul li a:before,
+    .wpo-shop-sidebar .search-widget form button,
+    .wpo-shop-single-section .product-details ul li:before,
+    .wpo-shop-single-section .product-details .product-option .theme-btn:hover,
+    .wpo-shop-single-section .product-details .product-option .view-cart-btn:hover,
+    .wpo-shop-single-section .product-details .product-option .product-row>div:last-child .theme-btn:hover,
+    .wpo-shop-single-section .product-details .product-option .product-row>div:last-child .view-cart-btn:hover,
+    .wpo-accountForm .wpo-accountBtn,
+    .wpo-shop-single-section .product-details .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-up:hover,
+    .wpo-shop-single-section .product-details .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-down:hover,
+    .wpo-shop-single-section .product-info .nav-tabs a:before,
+    .wpo-checkout-area .create-account button:hover,
+    .cart-area .cart-wrap .action a:hover,
+    .cart-area .submit-btn-area button:hover,
+    .cart-area .cart-wrap .action li.c-btn a,
+    .blog-sidebar .search-widget form button,
+    .blog-sidebar .widget h3:before,
+    .wpo-blog-pg-section .entry-meta ul li+li:before,
+    .blog-sidebar .tag-widget ul li a:hover,
+    .pagination-wrapper .pg-pagination .active a,
+    .pagination-wrapper .pg-pagination li a:hover,
+    .wpo-blog-pg-section .format-gallery .owl-nav [class*=owl-]:hover,
+    .wpo-blog-single-section .tag-share .tag a:hover,
+    .wpo-blog-single-section .tag-share-s2 .tag a:hover,
+    .wpo-blog-single-section .entry-meta ul li+li:before,
+    .wpo-site-header .mobail-menu button,
+    .wpo-site-header #navbar>ul>li .sub-menu a:after {
+        background: $theme-color-3;
+    }
+
+
+    .wpo-section-title h2::after,
+    .wpo-section-title-s2 h2::after,
+    .wpo-section-title h2::before,
+    .wpo-section-title-s2 h2::before,
+    .wpo-story-section-s4 .wpo-story-wrap .wpo-story-item .wpo-story-content-wrap .wpo-story-content-img:before,
+    .wpo-story-section-s4 .wpo-story-wrap .wpo-story-item .wpo-story-img-wrap:before,
+    .wpo-checkout-area .coupon,
+    .blog-sidebar .about-widget,
+    .blog-sidebar .search-widget input,
+    .blog-sidebar .category-widget ul a span,
+    .wpo-site-footer,
+    .pagination-wrapper .pg-pagination li a,
+    .wpo-blog-single-section .post blockquote,
+    .wpo-blog-single-section .tag-share .tag a,
+    .wpo-blog-single-section .tag-share-s2 .tag a,
+    .blog-sidebar .tag-widget ul li a,
+    .wpo-blog-pg-section .format-standard,
+    .wpo-blog-pg-section .format-quote {
+        background: transparentize($theme-color-3, .9);
+    }
+
+    .wpo-pricing-section .wpo-pricing-wrap .wpo-pricing-item:before,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item .round-1,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item .round-2,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item .round-3,
+    .wpo-blog-single-section .comment-respond .form-submit input {
+        background: transparentize($theme-color-3, .5);
+    }
+
+    .wpo-blog-pg-section .format-standard:before {
+        color: transparentize($theme-color-3, .8);
+    }
+
+    .wpo-event-section .wpo-event-wrap .wpo-event-item,
+    .wpo-accountForm .wpo-accountBtn,
+    .wpo-checkout-area .coupon label,
+    .wpo-checkout-area .s2 .coupon-3,
+    .wpo-checkout-area .s2.coupon-2 .coupon-3 label,
+    .wpo-checkout-area .s1.active-border .coupon-active label,
+    .wpo-checkout-area .s3.coupon-2 .coupon-3 label,
+    .wpo-couple-section-s3 .couple-area .couple-item .couple-img::before,
+    .wpo-story-section-s3 .wpo-story-wrap .wpo-story-item .wpo-story-img-wrap::before,
+    .wpo-couple-section-s3 .couple-area .couple-item .couple-img::after {
+        border-color: $theme-color-3;
+    }
+
+    .wpo-contact-section .wpo-contact-section-wrapper .wpo-contact-form-area,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text h2,
+    .wpo-blog-single-section .post blockquote:before,
+    .wpo-fun-fact-section .wpo-fun-fact-grids,
+    .wpo-fun-fact-section-s2 .wpo-fun-fact-grids,
+    .wpo-contact-section .wpo-contact-section-wrapper .wpo-contact-form-area .form-control,
+    .wpo-contact-section-s2 .wpo-contact-section-wrapper .wpo-contact-form-area .form-control,
+    .wpo-team-section .wpo-team-wrap .wpo-team-item .wpo-team-img:before,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item,
+    .wpo-site-footer .wpo-upper-footer::before {
+        border-color: transparentize($theme-color-3, .6);
+    }
+
+    .wpo-header-style-3 .navigation.sticky-on,
+    .wpo-contact-section .wpo-contact-section-wrapper,
+    .wpo-contact-section-s2 .wpo-contact-section-wrapper,
+    .wpo-service-details-text-3 {
+        background-color: darken($theme-color-3, 6%);
+    }
+
+    .wpo-pricing-section-s2 .wpo-section-title h2,
+    .wpo-site-footer .wpo-lower-footer .copyright a {
+        color: $dark-gray;
+    }
+
+    .wpo-blog-single-section .tag-share .tag a:hover {
+        color: $white;
+    }
+
+    @media (max-width: 991px) {
+        .wpo-site-header #navbar {
+            background: darken($theme-color-3, 2%);
+        }
+
+        .wpo-site-header #navbar>ul .menu-item-has-children>a:before {
+            background: none !important;
+        }
+
+        .wpo-site-header #navbar ul li a:hover,
+        .wpo-site-header #navbar ul li a:focus {
+            color: $white;
+        }
+    }
+
+    .wpo-blog-single-section .tag-share-s2 .tag a {
+        background: none !important;
+    }
+
+}
+
+// color-4 here
+
+.color4 {
+
+    .theme-btn,
+    .theme-btn-s3,
+    .theme-btn-s4 {
+        background: $theme-color-4;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background: $theme-color-4;
+
+            &:after {
+                border: 1px solid $theme-color-4;
+            }
+        }
+    }
+
+    .view-cart-btn {
+        background: $theme-color-4;
+
+        &:hover {
+            background-color: darken($theme-color-4, 8%);
+        }
+
+        &.s1 {
+            background: transparentize($theme-color-4, .8);
+            color: $theme-color-4;
+        }
+
+    }
+
+
+    .wpo-site-header {
+        .navbar-header {
+            .logo {
+                color: $theme-color-4;
+            }
+        }
+
+        #navbar {
+            ul {
+                li {
+                    a {
+                        &::before {
+                            background: $theme-color-4;
+                        }
+
+                        &:hover,
+                        &:focus {
+                            color: $theme-color-4;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mini-cart .cart-count {
+            background: $theme-color-4;
+        }
+
+        .mini-checkout-price span {
+            color: $theme-color-4;
+        }
+    }
+
+    .static-hero .slide-title h2 span {
+        color: $theme-color-4;
+    }
+
+    .couple-section ul li a {
+        color: $theme-color-4;
+    }
+
+    .wpo-story-section .tab-area .nav-tabs .nav-item .nav-link.active {
+        color: $theme-color-4;
+    }
+
+    .wpo-story-section .tab-area .wpo-story-item .wpo-story-content .wpo-story-content-inner span {
+        color: $theme-color-4;
+    }
+
+    .back-to-top {
+        background-color: transparentize($theme-color-4, .7);
+        border: 2px solid $theme-color-4;
+
+        &:hover {
+            background: $theme-color-4;
+        }
+    }
+
+
+    .theme-btn,
+    .view-cart-btn,
+    .theme-btn-s3,
+    .theme-btn-s4 {
+        color: $white;
+    }
+
+
+    .wpo-site-header .social-info ul li a i:before,
+    .mini-cart-content .mini-cart-item-des a:hover,
+    .wpo-hero-section .wpo-hero-items .owl-item.active.center .wpo-hero-img .wpo-hero-text h2,
+    .wpo-Service-section .wpo-Service-item .wpo-Service-text a:hover,
+    .wpo-Service-section-s2 .wpo-Service-item .wpo-Service-text a:hover,
+    .wpo-Service-section-s3 .wpo-Service-item .wpo-Service-text a:hover,
+    .wpo-testimonial-section .wpo-testimonial-items i,
+    .wpo-testimonial-section .slick-dots li.slick-active button:before,
+    .wpo-portfolio-section .grid .img-holder .portfolio-content h4 a:hover,
+    .wpo-portfolio-section-s4 .grid .img-holder .portfolio-content h4 a:hover,
+    .wpo-banner-section h4,
+    .wpo-team-section .wpo-team-wrap .wpo-team-item .wpo-team-text h3 a:hover,
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-text h3 a:hover,
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-img ul li a,
+    .wpo-blog-section .wpo-blog-items .wpo-blog-grids .grid .wpo-blog-item .wpo-blog-content h2 a:hover,
+    .wpo-blog-section-s2 .wpo-blog-items .wpo-blog-grids .grid .wpo-blog-item .wpo-blog-content h2 a:hover,
+    .wpo-blog-section-s3 .wpo-blog-items .wpo-blog-grids .grid .wpo-blog-item .wpo-blog-content h2 a:hover,
+    .wpo-site-footer .footer-link ul li a:hover,
+    .wpo-wedding-date #clock .time,
+    .wpo-couple-section .couple-area .couple-item .couple-text ul li a,
+    .wpo-couple-section-s2 .couple-area .couple-item .couple-text ul li a,
+    .wpo-couple-section-s3 .couple-area .couple-item .couple-text ul li a,
+    .wpo-couple-section-s4 .couple-area .couple-item .couple-text ul li a,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text ul li a,
+    .static-hero-s4 .wpo-event-item .wpo-event-text ul li a,
+    .forget-btn a,
+    .or span,
+    .subText a,
+    .wpo-shop-sidebar .widget_price_filter .filter-price button,
+    .wpo-checkout-area .cout-order-area .oreder-item ul .o-bottom,
+    .wpo-shop-single-section .product-details .price,
+    .blog-sidebar .category-widget ul a:hover,
+    .blog-sidebar .category-widget ul li:hover:before,
+    .wpo-blog-pg-section .post a.read-more:hover,
+    .wpo-blog-pg-section .post h3 a:hover,
+    .wpo-blog-pg-section .entry-meta ul li a:hover,
+    .blog-sidebar .recent-post-widget .post h4 a:hover,
+    .wpo-blog-single-section .tag-share .tag a:hover,
+    .wpo-blog-single-section .tag-share-s2 .tag a:hover,
+    .wpo-blog-single-section .author-box .social-link a:hover,
+    .wpo-blog-single-section .more-posts a:hover .post-control-link,
+    .wpo-blog-single-section .comments-area .comment-reply-link:hover,
+    .blog-sidebar .about-widget a:hover {
+        color: $theme-color-4;
+    }
+
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-text:before,
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-img ul li a:hover,
+    .wpo-site-footer .link-widget ul li a:hover,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:checked+label:after,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:not(:checked)+label:after,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:checked+label:after,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:not(:checked)+label:after,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:checked+label:after,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:not(:checked)+label:after,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .theme-btn,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .view-cart-btn,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .theme-btn,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .view-cart-btn,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .theme-btn,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .view-cart-btn,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text ul li a:before,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-img::before,
+    .static-hero-s4 .wpo-event-item .wpo-event-text ul li a:before,
+    .wpo-shop-sidebar .search-widget form button,
+    .wpo-shop-single-section .product-details ul li:before,
+    .wpo-shop-single-section .product-details .product-option .theme-btn:hover,
+    .wpo-shop-single-section .product-details .product-option .view-cart-btn:hover,
+    .wpo-shop-single-section .product-details .product-option .product-row>div:last-child .theme-btn:hover,
+    .wpo-shop-single-section .product-details .product-option .product-row>div:last-child .view-cart-btn:hover,
+    .wpo-accountForm .wpo-accountBtn,
+    .wpo-shop-single-section .product-details .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-up:hover,
+    .wpo-shop-single-section .product-details .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-down:hover,
+    .wpo-shop-single-section .product-info .nav-tabs a:before,
+    .wpo-checkout-area .create-account button:hover,
+    .cart-area .cart-wrap .action a:hover,
+    .cart-area .submit-btn-area button:hover,
+    .cart-area .cart-wrap .action li.c-btn a,
+    .blog-sidebar .search-widget form button,
+    .blog-sidebar .widget h3:before,
+    .wpo-blog-pg-section .entry-meta ul li+li:before,
+    .blog-sidebar .tag-widget ul li a:hover,
+    .pagination-wrapper .pg-pagination .active a,
+    .pagination-wrapper .pg-pagination li a:hover,
+    .wpo-blog-pg-section .format-gallery .owl-nav [class*=owl-]:hover,
+    .wpo-blog-single-section .tag-share .tag a:hover,
+    .wpo-blog-single-section .tag-share-s2 .tag a:hover,
+    .wpo-blog-single-section .entry-meta ul li+li:before,
+    .wpo-site-header .mobail-menu button,
+    .wpo-site-header #navbar>ul>li .sub-menu a:after {
+        background: $theme-color-4;
+    }
+
+
+    .wpo-section-title h2::after,
+    .wpo-section-title-s2 h2::after,
+    .wpo-section-title h2::before,
+    .wpo-section-title-s2 h2::before,
+    .wpo-story-section-s4 .wpo-story-wrap .wpo-story-item .wpo-story-content-wrap .wpo-story-content-img:before,
+    .wpo-story-section-s4 .wpo-story-wrap .wpo-story-item .wpo-story-img-wrap:before,
+    .wpo-checkout-area .coupon,
+    .blog-sidebar .about-widget,
+    .blog-sidebar .search-widget input,
+    .blog-sidebar .category-widget ul a span,
+    .wpo-site-footer,
+    .pagination-wrapper .pg-pagination li a,
+    .wpo-blog-single-section .post blockquote,
+    .wpo-blog-single-section .tag-share .tag a,
+    .wpo-blog-single-section .tag-share-s2 .tag a,
+    .blog-sidebar .tag-widget ul li a,
+    .wpo-blog-pg-section .format-standard,
+    .wpo-blog-pg-section .format-quote {
+        background: transparentize($theme-color-4, .9);
+    }
+
+    .wpo-pricing-section .wpo-pricing-wrap .wpo-pricing-item:before,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item .round-1,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item .round-2,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item .round-3,
+    .wpo-blog-single-section .comment-respond .form-submit input {
+        background: transparentize($theme-color-4, .5);
+    }
+
+    .wpo-blog-pg-section .format-standard:before {
+        color: transparentize($theme-color-4, .8);
+    }
+
+    .wpo-event-section .wpo-event-wrap .wpo-event-item,
+    .wpo-accountForm .wpo-accountBtn,
+    .wpo-checkout-area .coupon label,
+    .wpo-checkout-area .s2 .coupon-3,
+    .wpo-checkout-area .s2.coupon-2 .coupon-3 label,
+    .wpo-checkout-area .s1.active-border .coupon-active label,
+    .wpo-checkout-area .s3.coupon-2 .coupon-3 label,
+    .wpo-couple-section-s3 .couple-area .couple-item .couple-img::before,
+    .wpo-story-section-s3 .wpo-story-wrap .wpo-story-item .wpo-story-img-wrap::before,
+    .wpo-couple-section-s3 .couple-area .couple-item .couple-img::after {
+        border-color: $theme-color-4;
+    }
+
+    .wpo-contact-section .wpo-contact-section-wrapper .wpo-contact-form-area,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text h2,
+    .wpo-blog-single-section .post blockquote:before,
+    .wpo-fun-fact-section .wpo-fun-fact-grids,
+    .wpo-fun-fact-section-s2 .wpo-fun-fact-grids,
+    .wpo-contact-section .wpo-contact-section-wrapper .wpo-contact-form-area .form-control,
+    .wpo-contact-section-s2 .wpo-contact-section-wrapper .wpo-contact-form-area .form-control,
+    .wpo-team-section .wpo-team-wrap .wpo-team-item .wpo-team-img:before,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item,
+    .wpo-site-footer .wpo-upper-footer::before {
+        border-color: transparentize($theme-color-4, .6);
+    }
+
+    .wpo-header-style-3 .navigation.sticky-on,
+    .wpo-contact-section .wpo-contact-section-wrapper,
+    .wpo-contact-section-s2 .wpo-contact-section-wrapper,
+    .wpo-service-details-text-3 {
+        background-color: darken($theme-color-4, 6%);
+    }
+
+    .wpo-pricing-section-s2 .wpo-section-title h2,
+    .wpo-site-footer .wpo-lower-footer .copyright a {
+        color: $dark-gray;
+    }
+
+    .wpo-blog-single-section .tag-share .tag a:hover {
+        color: $white;
+    }
+
+    @media (max-width: 991px) {
+        .wpo-site-header #navbar {
+            background: darken($theme-color-4, 2%);
+        }
+
+        .wpo-site-header #navbar>ul .menu-item-has-children>a:before {
+            background: none !important;
+        }
+
+        .wpo-site-header #navbar ul li a:hover,
+        .wpo-site-header #navbar ul li a:focus {
+            color: $white;
+        }
+    }
+
+    .wpo-blog-single-section .tag-share-s2 .tag a {
+        background: none !important;
+    }
+
+}
+
+
+
+// color-5 here
+
+.color5 {
+
+    .theme-btn,
+    .theme-btn-s3,
+    .theme-btn-s4 {
+        background: $theme-color-5;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background: $theme-color-5;
+
+            &:after {
+                border: 1px solid $theme-color-5;
+            }
+        }
+    }
+
+    .view-cart-btn {
+        background: $theme-color-5;
+
+        &:hover {
+            background-color: darken($theme-color-5, 8%);
+        }
+
+        &.s1 {
+            background: transparentize($theme-color-5, .8);
+            color: $theme-color-5;
+        }
+
+    }
+
+
+    .wpo-site-header {
+        .navbar-header {
+            .logo {
+                color: $theme-color-5;
+            }
+        }
+
+        #navbar {
+            ul {
+                li {
+                    a {
+                        &::before {
+                            background: $theme-color-5;
+                        }
+
+                        &:hover,
+                        &:focus {
+                            color: $theme-color-5;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mini-cart .cart-count {
+            background: $theme-color-5;
+        }
+
+        .mini-checkout-price span {
+            color: $theme-color-5;
+        }
+    }
+
+    .static-hero .slide-title h2 span {
+        color: $theme-color-5;
+    }
+
+    .couple-section ul li a {
+        color: $theme-color-5;
+    }
+
+    .wpo-story-section .tab-area .nav-tabs .nav-item .nav-link.active {
+        color: $theme-color-5;
+    }
+
+    .wpo-story-section .tab-area .wpo-story-item .wpo-story-content .wpo-story-content-inner span {
+        color: $theme-color-5;
+    }
+
+    .back-to-top {
+        background-color: transparentize($theme-color-5, .7);
+        border: 2px solid $theme-color-5;
+
+        &:hover {
+            background: $theme-color-5;
+        }
+    }
+
+
+    .theme-btn,
+    .view-cart-btn,
+    .theme-btn-s3,
+    .theme-btn-s4 {
+        color: $white;
+    }
+
+
+    .wpo-site-header .social-info ul li a i:before,
+    .mini-cart-content .mini-cart-item-des a:hover,
+    .wpo-hero-section .wpo-hero-items .owl-item.active.center .wpo-hero-img .wpo-hero-text h2,
+    .wpo-Service-section .wpo-Service-item .wpo-Service-text a:hover,
+    .wpo-Service-section-s2 .wpo-Service-item .wpo-Service-text a:hover,
+    .wpo-Service-section-s3 .wpo-Service-item .wpo-Service-text a:hover,
+    .wpo-testimonial-section .wpo-testimonial-items i,
+    .wpo-testimonial-section .slick-dots li.slick-active button:before,
+    .wpo-portfolio-section .grid .img-holder .portfolio-content h4 a:hover,
+    .wpo-portfolio-section-s4 .grid .img-holder .portfolio-content h4 a:hover,
+    .wpo-banner-section h4,
+    .wpo-team-section .wpo-team-wrap .wpo-team-item .wpo-team-text h3 a:hover,
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-text h3 a:hover,
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-img ul li a,
+    .wpo-blog-section .wpo-blog-items .wpo-blog-grids .grid .wpo-blog-item .wpo-blog-content h2 a:hover,
+    .wpo-blog-section-s2 .wpo-blog-items .wpo-blog-grids .grid .wpo-blog-item .wpo-blog-content h2 a:hover,
+    .wpo-blog-section-s3 .wpo-blog-items .wpo-blog-grids .grid .wpo-blog-item .wpo-blog-content h2 a:hover,
+    .wpo-site-footer .footer-link ul li a:hover,
+    .wpo-wedding-date #clock .time,
+    .wpo-couple-section .couple-area .couple-item .couple-text ul li a,
+    .wpo-couple-section-s2 .couple-area .couple-item .couple-text ul li a,
+    .wpo-couple-section-s3 .couple-area .couple-item .couple-text ul li a,
+    .wpo-couple-section-s4 .couple-area .couple-item .couple-text ul li a,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text ul li a,
+    .static-hero-s4 .wpo-event-item .wpo-event-text ul li a,
+    .forget-btn a,
+    .or span,
+    .subText a,
+    .wpo-shop-sidebar .widget_price_filter .filter-price button,
+    .wpo-checkout-area .cout-order-area .oreder-item ul .o-bottom,
+    .wpo-shop-single-section .product-details .price,
+    .blog-sidebar .category-widget ul a:hover,
+    .blog-sidebar .category-widget ul li:hover:before,
+    .wpo-blog-pg-section .post a.read-more:hover,
+    .wpo-blog-pg-section .post h3 a:hover,
+    .wpo-blog-pg-section .entry-meta ul li a:hover,
+    .blog-sidebar .recent-post-widget .post h4 a:hover,
+    .wpo-blog-single-section .tag-share .tag a:hover,
+    .wpo-blog-single-section .tag-share-s2 .tag a:hover,
+    .wpo-blog-single-section .author-box .social-link a:hover,
+    .wpo-blog-single-section .more-posts a:hover .post-control-link,
+    .wpo-blog-single-section .comments-area .comment-reply-link:hover,
+    .blog-sidebar .about-widget a:hover {
+        color: $theme-color-5;
+    }
+
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-text:before,
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-img ul li a:hover,
+    .wpo-site-footer .link-widget ul li a:hover,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:checked+label:after,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:not(:checked)+label:after,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:checked+label:after,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:not(:checked)+label:after,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:checked+label:after,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:not(:checked)+label:after,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .theme-btn,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .view-cart-btn,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .theme-btn,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .view-cart-btn,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .theme-btn,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .view-cart-btn,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text ul li a:before,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-img::before,
+    .static-hero-s4 .wpo-event-item .wpo-event-text ul li a:before,
+    .wpo-shop-sidebar .search-widget form button,
+    .wpo-shop-single-section .product-details ul li:before,
+    .wpo-shop-single-section .product-details .product-option .theme-btn:hover,
+    .wpo-shop-single-section .product-details .product-option .view-cart-btn:hover,
+    .wpo-shop-single-section .product-details .product-option .product-row>div:last-child .theme-btn:hover,
+    .wpo-shop-single-section .product-details .product-option .product-row>div:last-child .view-cart-btn:hover,
+    .wpo-accountForm .wpo-accountBtn,
+    .wpo-shop-single-section .product-details .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-up:hover,
+    .wpo-shop-single-section .product-details .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-down:hover,
+    .wpo-shop-single-section .product-info .nav-tabs a:before,
+    .wpo-checkout-area .create-account button:hover,
+    .cart-area .cart-wrap .action a:hover,
+    .cart-area .submit-btn-area button:hover,
+    .cart-area .cart-wrap .action li.c-btn a,
+    .blog-sidebar .search-widget form button,
+    .blog-sidebar .widget h3:before,
+    .wpo-blog-pg-section .entry-meta ul li+li:before,
+    .blog-sidebar .tag-widget ul li a:hover,
+    .pagination-wrapper .pg-pagination .active a,
+    .pagination-wrapper .pg-pagination li a:hover,
+    .wpo-blog-pg-section .format-gallery .owl-nav [class*=owl-]:hover,
+    .wpo-blog-single-section .tag-share .tag a:hover,
+    .wpo-blog-single-section .tag-share-s2 .tag a:hover,
+    .wpo-blog-single-section .entry-meta ul li+li:before,
+    .wpo-site-header .mobail-menu button,
+    .wpo-site-header #navbar>ul>li .sub-menu a:after {
+        background: $theme-color-5;
+    }
+
+
+    .wpo-section-title h2::after,
+    .wpo-section-title-s2 h2::after,
+    .wpo-section-title h2::before,
+    .wpo-section-title-s2 h2::before,
+    .wpo-story-section-s4 .wpo-story-wrap .wpo-story-item .wpo-story-content-wrap .wpo-story-content-img:before,
+    .wpo-story-section-s4 .wpo-story-wrap .wpo-story-item .wpo-story-img-wrap:before,
+    .wpo-checkout-area .coupon,
+    .blog-sidebar .about-widget,
+    .blog-sidebar .search-widget input,
+    .blog-sidebar .category-widget ul a span,
+    .wpo-site-footer,
+    .pagination-wrapper .pg-pagination li a,
+    .wpo-blog-single-section .post blockquote,
+    .wpo-blog-single-section .tag-share .tag a,
+    .wpo-blog-single-section .tag-share-s2 .tag a,
+    .blog-sidebar .tag-widget ul li a,
+    .wpo-blog-pg-section .format-standard,
+    .wpo-blog-pg-section .format-quote {
+        background: transparentize($theme-color-5, .9);
+    }
+
+    .wpo-pricing-section .wpo-pricing-wrap .wpo-pricing-item:before,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item .round-1,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item .round-2,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item .round-3,
+    .wpo-blog-single-section .comment-respond .form-submit input {
+        background: transparentize($theme-color-5, .5);
+    }
+
+    .wpo-blog-pg-section .format-standard:before {
+        color: transparentize($theme-color-5, .8);
+    }
+
+    .wpo-event-section .wpo-event-wrap .wpo-event-item,
+    .wpo-accountForm .wpo-accountBtn,
+    .wpo-checkout-area .coupon label,
+    .wpo-checkout-area .s2 .coupon-3,
+    .wpo-checkout-area .s2.coupon-2 .coupon-3 label,
+    .wpo-checkout-area .s1.active-border .coupon-active label,
+    .wpo-checkout-area .s3.coupon-2 .coupon-3 label,
+    .wpo-couple-section-s3 .couple-area .couple-item .couple-img::before,
+    .wpo-story-section-s3 .wpo-story-wrap .wpo-story-item .wpo-story-img-wrap::before,
+    .wpo-couple-section-s3 .couple-area .couple-item .couple-img::after {
+        border-color: $theme-color-5;
+    }
+
+    .wpo-contact-section .wpo-contact-section-wrapper .wpo-contact-form-area,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text h2,
+    .wpo-blog-single-section .post blockquote:before,
+    .wpo-fun-fact-section .wpo-fun-fact-grids,
+    .wpo-fun-fact-section-s2 .wpo-fun-fact-grids,
+    .wpo-contact-section .wpo-contact-section-wrapper .wpo-contact-form-area .form-control,
+    .wpo-contact-section-s2 .wpo-contact-section-wrapper .wpo-contact-form-area .form-control,
+    .wpo-team-section .wpo-team-wrap .wpo-team-item .wpo-team-img:before,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item,
+    .wpo-site-footer .wpo-upper-footer::before {
+        border-color: transparentize($theme-color-5, .6);
+    }
+
+    .wpo-header-style-3 .navigation.sticky-on,
+    .wpo-contact-section .wpo-contact-section-wrapper,
+    .wpo-contact-section-s2 .wpo-contact-section-wrapper,
+    .wpo-service-details-text-3 {
+        background-color: darken($theme-color-5, 6%);
+    }
+
+    .wpo-pricing-section-s2 .wpo-section-title h2,
+    .wpo-site-footer .wpo-lower-footer .copyright a {
+        color: $dark-gray;
+    }
+
+    .wpo-blog-single-section .tag-share .tag a:hover {
+        color: $white;
+    }
+
+    @media (max-width: 991px) {
+        .wpo-site-header #navbar {
+            background: darken($theme-color-5, 2%);
+        }
+
+        .wpo-site-header #navbar>ul .menu-item-has-children>a:before {
+            background: none !important;
+        }
+
+        .wpo-site-header #navbar ul li a:hover,
+        .wpo-site-header #navbar ul li a:focus {
+            color: $white;
+        }
+    }
+
+    .wpo-blog-single-section .tag-share-s2 .tag a {
+        background: none !important;
+    }
+
+}
+
+// color-6 here
+
+.color6 {
+
+    .theme-btn,
+    .theme-btn-s3,
+    .theme-btn-s4 {
+        background: $theme-color-6;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background: $theme-color-6;
+
+            &:after {
+                border: 1px solid $theme-color-6;
+            }
+        }
+    }
+
+    .view-cart-btn {
+        background: $theme-color-6;
+
+        &:hover {
+            background-color: darken($theme-color-6, 8%);
+        }
+
+        &.s1 {
+            background: transparentize($theme-color-6, .8);
+            color: $theme-color-6;
+        }
+
+    }
+
+
+    .wpo-site-header {
+        .navbar-header {
+            .logo {
+                color: $theme-color-6;
+            }
+        }
+
+        #navbar {
+            ul {
+                li {
+                    a {
+                        &::before {
+                            background: $theme-color-6;
+                        }
+
+                        &:hover,
+                        &:focus {
+                            color: $theme-color-6;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mini-cart .cart-count {
+            background: $theme-color-6;
+        }
+
+        .mini-checkout-price span {
+            color: $theme-color-6;
+        }
+    }
+
+    .static-hero .slide-title h2 span {
+        color: $theme-color-6;
+    }
+
+    .couple-section ul li a {
+        color: $theme-color-6;
+    }
+
+    .wpo-story-section .tab-area .nav-tabs .nav-item .nav-link.active {
+        color: $theme-color-6;
+    }
+
+    .wpo-story-section .tab-area .wpo-story-item .wpo-story-content .wpo-story-content-inner span {
+        color: $theme-color-6;
+    }
+
+    .back-to-top {
+        background-color: transparentize($theme-color-6, .7);
+        border: 2px solid $theme-color-6;
+
+        &:hover {
+            background: $theme-color-6;
+        }
+    }
+
+
+    .theme-btn,
+    .view-cart-btn,
+    .theme-btn-s3,
+    .theme-btn-s4 {
+        color: $white;
+    }
+
+
+    .wpo-site-header .social-info ul li a i:before,
+    .mini-cart-content .mini-cart-item-des a:hover,
+    .wpo-hero-section .wpo-hero-items .owl-item.active.center .wpo-hero-img .wpo-hero-text h2,
+    .wpo-Service-section .wpo-Service-item .wpo-Service-text a:hover,
+    .wpo-Service-section-s2 .wpo-Service-item .wpo-Service-text a:hover,
+    .wpo-Service-section-s3 .wpo-Service-item .wpo-Service-text a:hover,
+    .wpo-testimonial-section .wpo-testimonial-items i,
+    .wpo-testimonial-section .slick-dots li.slick-active button:before,
+    .wpo-portfolio-section .grid .img-holder .portfolio-content h4 a:hover,
+    .wpo-portfolio-section-s4 .grid .img-holder .portfolio-content h4 a:hover,
+    .wpo-banner-section h4,
+    .wpo-team-section .wpo-team-wrap .wpo-team-item .wpo-team-text h3 a:hover,
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-text h3 a:hover,
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-img ul li a,
+    .wpo-blog-section .wpo-blog-items .wpo-blog-grids .grid .wpo-blog-item .wpo-blog-content h2 a:hover,
+    .wpo-blog-section-s2 .wpo-blog-items .wpo-blog-grids .grid .wpo-blog-item .wpo-blog-content h2 a:hover,
+    .wpo-blog-section-s3 .wpo-blog-items .wpo-blog-grids .grid .wpo-blog-item .wpo-blog-content h2 a:hover,
+    .wpo-site-footer .footer-link ul li a:hover,
+    .wpo-wedding-date #clock .time,
+    .wpo-couple-section .couple-area .couple-item .couple-text ul li a,
+    .wpo-couple-section-s2 .couple-area .couple-item .couple-text ul li a,
+    .wpo-couple-section-s3 .couple-area .couple-item .couple-text ul li a,
+    .wpo-couple-section-s4 .couple-area .couple-item .couple-text ul li a,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text ul li a,
+    .static-hero-s4 .wpo-event-item .wpo-event-text ul li a,
+    .forget-btn a,
+    .or span,
+    .subText a,
+    .wpo-shop-sidebar .widget_price_filter .filter-price button,
+    .wpo-checkout-area .cout-order-area .oreder-item ul .o-bottom,
+    .wpo-shop-single-section .product-details .price,
+    .blog-sidebar .category-widget ul a:hover,
+    .blog-sidebar .category-widget ul li:hover:before,
+    .wpo-blog-pg-section .post a.read-more:hover,
+    .wpo-blog-pg-section .post h3 a:hover,
+    .wpo-blog-pg-section .entry-meta ul li a:hover,
+    .blog-sidebar .recent-post-widget .post h4 a:hover,
+    .wpo-blog-single-section .tag-share .tag a:hover,
+    .wpo-blog-single-section .tag-share-s2 .tag a:hover,
+    .wpo-blog-single-section .author-box .social-link a:hover,
+    .wpo-blog-single-section .more-posts a:hover .post-control-link,
+    .wpo-blog-single-section .comments-area .comment-reply-link:hover,
+    .blog-sidebar .about-widget a:hover {
+        color: $theme-color-6;
+    }
+
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-text:before,
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-img ul li a:hover,
+    .wpo-site-footer .link-widget ul li a:hover,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:checked+label:after,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:not(:checked)+label:after,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:checked+label:after,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:not(:checked)+label:after,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:checked+label:after,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:not(:checked)+label:after,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .theme-btn,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .view-cart-btn,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .theme-btn,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .view-cart-btn,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .theme-btn,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .view-cart-btn,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text ul li a:before,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-img::before,
+    .static-hero-s4 .wpo-event-item .wpo-event-text ul li a:before,
+    .wpo-shop-sidebar .search-widget form button,
+    .wpo-shop-single-section .product-details ul li:before,
+    .wpo-shop-single-section .product-details .product-option .theme-btn:hover,
+    .wpo-shop-single-section .product-details .product-option .view-cart-btn:hover,
+    .wpo-shop-single-section .product-details .product-option .product-row>div:last-child .theme-btn:hover,
+    .wpo-shop-single-section .product-details .product-option .product-row>div:last-child .view-cart-btn:hover,
+    .wpo-accountForm .wpo-accountBtn,
+    .wpo-shop-single-section .product-details .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-up:hover,
+    .wpo-shop-single-section .product-details .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-down:hover,
+    .wpo-shop-single-section .product-info .nav-tabs a:before,
+    .wpo-checkout-area .create-account button:hover,
+    .cart-area .cart-wrap .action a:hover,
+    .cart-area .submit-btn-area button:hover,
+    .cart-area .cart-wrap .action li.c-btn a,
+    .blog-sidebar .search-widget form button,
+    .blog-sidebar .widget h3:before,
+    .wpo-blog-pg-section .entry-meta ul li+li:before,
+    .blog-sidebar .tag-widget ul li a:hover,
+    .pagination-wrapper .pg-pagination .active a,
+    .pagination-wrapper .pg-pagination li a:hover,
+    .wpo-blog-pg-section .format-gallery .owl-nav [class*=owl-]:hover,
+    .wpo-blog-single-section .tag-share .tag a:hover,
+    .wpo-blog-single-section .tag-share-s2 .tag a:hover,
+    .wpo-blog-single-section .entry-meta ul li+li:before,
+    .wpo-site-header .mobail-menu button,
+    .wpo-site-header #navbar>ul>li .sub-menu a:after {
+        background: $theme-color-6;
+    }
+
+
+    .wpo-section-title h2::after,
+    .wpo-section-title-s2 h2::after,
+    .wpo-section-title h2::before,
+    .wpo-section-title-s2 h2::before,
+    .wpo-story-section-s4 .wpo-story-wrap .wpo-story-item .wpo-story-content-wrap .wpo-story-content-img:before,
+    .wpo-story-section-s4 .wpo-story-wrap .wpo-story-item .wpo-story-img-wrap:before,
+    .wpo-checkout-area .coupon,
+    .blog-sidebar .about-widget,
+    .blog-sidebar .search-widget input,
+    .blog-sidebar .category-widget ul a span,
+    .wpo-site-footer,
+    .pagination-wrapper .pg-pagination li a,
+    .wpo-blog-single-section .post blockquote,
+    .wpo-blog-single-section .tag-share .tag a,
+    .wpo-blog-single-section .tag-share-s2 .tag a,
+    .blog-sidebar .tag-widget ul li a,
+    .wpo-blog-pg-section .format-standard,
+    .wpo-blog-pg-section .format-quote {
+        background: transparentize($theme-color-6, .9);
+    }
+
+    .wpo-pricing-section .wpo-pricing-wrap .wpo-pricing-item:before,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item .round-1,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item .round-2,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item .round-3,
+    .wpo-blog-single-section .comment-respond .form-submit input {
+        background: transparentize($theme-color-6, .5);
+    }
+
+    .wpo-blog-pg-section .format-standard:before {
+        color: transparentize($theme-color-6, .8);
+    }
+
+    .wpo-event-section .wpo-event-wrap .wpo-event-item,
+    .wpo-accountForm .wpo-accountBtn,
+    .wpo-checkout-area .coupon label,
+    .wpo-checkout-area .s2 .coupon-3,
+    .wpo-checkout-area .s2.coupon-2 .coupon-3 label,
+    .wpo-checkout-area .s1.active-border .coupon-active label,
+    .wpo-checkout-area .s3.coupon-2 .coupon-3 label,
+    .wpo-couple-section-s3 .couple-area .couple-item .couple-img::before,
+    .wpo-story-section-s3 .wpo-story-wrap .wpo-story-item .wpo-story-img-wrap::before,
+    .wpo-couple-section-s3 .couple-area .couple-item .couple-img::after {
+        border-color: $theme-color-6;
+    }
+
+    .wpo-contact-section .wpo-contact-section-wrapper .wpo-contact-form-area,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text h2,
+    .wpo-blog-single-section .post blockquote:before,
+    .wpo-fun-fact-section .wpo-fun-fact-grids,
+    .wpo-fun-fact-section-s2 .wpo-fun-fact-grids,
+    .wpo-contact-section .wpo-contact-section-wrapper .wpo-contact-form-area .form-control,
+    .wpo-contact-section-s2 .wpo-contact-section-wrapper .wpo-contact-form-area .form-control,
+    .wpo-team-section .wpo-team-wrap .wpo-team-item .wpo-team-img:before,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item,
+    .wpo-site-footer .wpo-upper-footer::before {
+        border-color: transparentize($theme-color-6, .6);
+    }
+
+    .wpo-header-style-3 .navigation.sticky-on,
+    .wpo-contact-section .wpo-contact-section-wrapper,
+    .wpo-contact-section-s2 .wpo-contact-section-wrapper,
+    .wpo-service-details-text-3 {
+        background-color: darken($theme-color-6, 6%);
+    }
+
+    .wpo-pricing-section-s2 .wpo-section-title h2,
+    .wpo-site-footer .wpo-lower-footer .copyright a {
+        color: $dark-gray;
+    }
+
+    .wpo-blog-single-section .tag-share .tag a:hover {
+        color: $white;
+    }
+
+    @media (max-width: 991px) {
+        .wpo-site-header #navbar {
+            background: darken($theme-color-6, 2%);
+        }
+
+        .wpo-site-header #navbar>ul .menu-item-has-children>a:before {
+            background: none !important;
+        }
+
+        .wpo-site-header #navbar ul li a:hover,
+        .wpo-site-header #navbar ul li a:focus {
+            color: $white;
+        }
+    }
+
+    .wpo-blog-single-section .tag-share-s2 .tag a {
+        background: none !important;
+    }
+
+}
+
+
+// color-7 here
+
+.color7 {
+
+    .theme-btn,
+    .theme-btn-s3,
+    .theme-btn-s4 {
+        background: $theme-color-7;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background: $theme-color-7;
+
+            &:after {
+                border: 1px solid $theme-color-7;
+            }
+        }
+    }
+
+    .view-cart-btn {
+        background: $theme-color-7;
+
+        &:hover {
+            background-color: darken($theme-color-7, 8%);
+        }
+
+        &.s1 {
+            background: transparentize($theme-color-7, .8);
+            color: $theme-color-7;
+        }
+
+    }
+
+
+    .wpo-site-header {
+        .navbar-header {
+            .logo {
+                color: $theme-color-7;
+            }
+        }
+
+        #navbar {
+            ul {
+                li {
+                    a {
+                        &::before {
+                            background: $theme-color-7;
+                        }
+
+                        &:hover,
+                        &:focus {
+                            color: $theme-color-7;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mini-cart .cart-count {
+            background: $theme-color-7;
+        }
+
+        .mini-checkout-price span {
+            color: $theme-color-7;
+        }
+    }
+
+    .static-hero .slide-title h2 span {
+        color: $theme-color-7;
+    }
+
+    .couple-section ul li a {
+        color: $theme-color-7;
+    }
+
+    .wpo-story-section .tab-area .nav-tabs .nav-item .nav-link.active {
+        color: $theme-color-7;
+    }
+
+    .wpo-story-section .tab-area .wpo-story-item .wpo-story-content .wpo-story-content-inner span {
+        color: $theme-color-7;
+    }
+
+    .back-to-top {
+        background-color: transparentize($theme-color-7, .7);
+        border: 2px solid $theme-color-7;
+
+        &:hover {
+            background: $theme-color-7;
+        }
+    }
+
+
+    .theme-btn,
+    .view-cart-btn,
+    .theme-btn-s3,
+    .theme-btn-s4 {
+        color: $white;
+    }
+
+
+    .wpo-site-header .social-info ul li a i:before,
+    .mini-cart-content .mini-cart-item-des a:hover,
+    .wpo-hero-section .wpo-hero-items .owl-item.active.center .wpo-hero-img .wpo-hero-text h2,
+    .wpo-Service-section .wpo-Service-item .wpo-Service-text a:hover,
+    .wpo-Service-section-s2 .wpo-Service-item .wpo-Service-text a:hover,
+    .wpo-Service-section-s3 .wpo-Service-item .wpo-Service-text a:hover,
+    .wpo-testimonial-section .wpo-testimonial-items i,
+    .wpo-testimonial-section .slick-dots li.slick-active button:before,
+    .wpo-portfolio-section .grid .img-holder .portfolio-content h4 a:hover,
+    .wpo-portfolio-section-s4 .grid .img-holder .portfolio-content h4 a:hover,
+    .wpo-banner-section h4,
+    .wpo-team-section .wpo-team-wrap .wpo-team-item .wpo-team-text h3 a:hover,
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-text h3 a:hover,
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-img ul li a,
+    .wpo-blog-section .wpo-blog-items .wpo-blog-grids .grid .wpo-blog-item .wpo-blog-content h2 a:hover,
+    .wpo-blog-section-s2 .wpo-blog-items .wpo-blog-grids .grid .wpo-blog-item .wpo-blog-content h2 a:hover,
+    .wpo-blog-section-s3 .wpo-blog-items .wpo-blog-grids .grid .wpo-blog-item .wpo-blog-content h2 a:hover,
+    .wpo-site-footer .footer-link ul li a:hover,
+    .wpo-wedding-date #clock .time,
+    .wpo-couple-section .couple-area .couple-item .couple-text ul li a,
+    .wpo-couple-section-s2 .couple-area .couple-item .couple-text ul li a,
+    .wpo-couple-section-s3 .couple-area .couple-item .couple-text ul li a,
+    .wpo-couple-section-s4 .couple-area .couple-item .couple-text ul li a,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text ul li a,
+    .static-hero-s4 .wpo-event-item .wpo-event-text ul li a,
+    .forget-btn a,
+    .or span,
+    .subText a,
+    .wpo-shop-sidebar .widget_price_filter .filter-price button,
+    .wpo-checkout-area .cout-order-area .oreder-item ul .o-bottom,
+    .wpo-shop-single-section .product-details .price,
+    .blog-sidebar .category-widget ul a:hover,
+    .blog-sidebar .category-widget ul li:hover:before,
+    .wpo-blog-pg-section .post a.read-more:hover,
+    .wpo-blog-pg-section .post h3 a:hover,
+    .wpo-blog-pg-section .entry-meta ul li a:hover,
+    .blog-sidebar .recent-post-widget .post h4 a:hover,
+    .wpo-blog-single-section .tag-share .tag a:hover,
+    .wpo-blog-single-section .tag-share-s2 .tag a:hover,
+    .wpo-blog-single-section .author-box .social-link a:hover,
+    .wpo-blog-single-section .more-posts a:hover .post-control-link,
+    .wpo-blog-single-section .comments-area .comment-reply-link:hover,
+    .blog-sidebar .about-widget a:hover {
+        color: $theme-color-7;
+    }
+
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-text:before,
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-img ul li a:hover,
+    .wpo-site-footer .link-widget ul li a:hover,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:checked+label:after,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:not(:checked)+label:after,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:checked+label:after,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:not(:checked)+label:after,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:checked+label:after,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:not(:checked)+label:after,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .theme-btn,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .view-cart-btn,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .theme-btn,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .view-cart-btn,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .theme-btn,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .view-cart-btn,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text ul li a:before,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-img::before,
+    .static-hero-s4 .wpo-event-item .wpo-event-text ul li a:before,
+    .wpo-shop-sidebar .search-widget form button,
+    .wpo-shop-single-section .product-details ul li:before,
+    .wpo-shop-single-section .product-details .product-option .theme-btn:hover,
+    .wpo-shop-single-section .product-details .product-option .view-cart-btn:hover,
+    .wpo-shop-single-section .product-details .product-option .product-row>div:last-child .theme-btn:hover,
+    .wpo-shop-single-section .product-details .product-option .product-row>div:last-child .view-cart-btn:hover,
+    .wpo-accountForm .wpo-accountBtn,
+    .wpo-shop-single-section .product-details .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-up:hover,
+    .wpo-shop-single-section .product-details .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-down:hover,
+    .wpo-shop-single-section .product-info .nav-tabs a:before,
+    .wpo-checkout-area .create-account button:hover,
+    .cart-area .cart-wrap .action a:hover,
+    .cart-area .submit-btn-area button:hover,
+    .cart-area .cart-wrap .action li.c-btn a,
+    .blog-sidebar .search-widget form button,
+    .blog-sidebar .widget h3:before,
+    .wpo-blog-pg-section .entry-meta ul li+li:before,
+    .blog-sidebar .tag-widget ul li a:hover,
+    .pagination-wrapper .pg-pagination .active a,
+    .pagination-wrapper .pg-pagination li a:hover,
+    .wpo-blog-pg-section .format-gallery .owl-nav [class*=owl-]:hover,
+    .wpo-blog-single-section .tag-share .tag a:hover,
+    .wpo-blog-single-section .tag-share-s2 .tag a:hover,
+    .wpo-blog-single-section .entry-meta ul li+li:before,
+    .wpo-site-header .mobail-menu button,
+    .wpo-site-header #navbar>ul>li .sub-menu a:after {
+        background: $theme-color-7;
+    }
+
+
+    .wpo-section-title h2::after,
+    .wpo-section-title-s2 h2::after,
+    .wpo-section-title h2::before,
+    .wpo-section-title-s2 h2::before,
+    .wpo-story-section-s4 .wpo-story-wrap .wpo-story-item .wpo-story-content-wrap .wpo-story-content-img:before,
+    .wpo-story-section-s4 .wpo-story-wrap .wpo-story-item .wpo-story-img-wrap:before,
+    .wpo-checkout-area .coupon,
+    .blog-sidebar .about-widget,
+    .blog-sidebar .search-widget input,
+    .blog-sidebar .category-widget ul a span,
+    .wpo-site-footer,
+    .pagination-wrapper .pg-pagination li a,
+    .wpo-blog-single-section .post blockquote,
+    .wpo-blog-single-section .tag-share .tag a,
+    .wpo-blog-single-section .tag-share-s2 .tag a,
+    .blog-sidebar .tag-widget ul li a,
+    .wpo-blog-pg-section .format-standard,
+    .wpo-blog-pg-section .format-quote {
+        background: transparentize($theme-color-7, .9);
+    }
+
+    .wpo-pricing-section .wpo-pricing-wrap .wpo-pricing-item:before,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item .round-1,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item .round-2,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item .round-3,
+    .wpo-blog-single-section .comment-respond .form-submit input {
+        background: transparentize($theme-color-7, .5);
+    }
+
+    .wpo-blog-pg-section .format-standard:before {
+        color: transparentize($theme-color-7, .8);
+    }
+
+    .wpo-event-section .wpo-event-wrap .wpo-event-item,
+    .wpo-accountForm .wpo-accountBtn,
+    .wpo-checkout-area .coupon label,
+    .wpo-checkout-area .s2 .coupon-3,
+    .wpo-checkout-area .s2.coupon-2 .coupon-3 label,
+    .wpo-checkout-area .s1.active-border .coupon-active label,
+    .wpo-checkout-area .s3.coupon-2 .coupon-3 label,
+    .wpo-couple-section-s3 .couple-area .couple-item .couple-img::before,
+    .wpo-story-section-s3 .wpo-story-wrap .wpo-story-item .wpo-story-img-wrap::before,
+    .wpo-couple-section-s3 .couple-area .couple-item .couple-img::after {
+        border-color: $theme-color-7;
+    }
+
+    .wpo-contact-section .wpo-contact-section-wrapper .wpo-contact-form-area,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text h2,
+    .wpo-blog-single-section .post blockquote:before,
+    .wpo-fun-fact-section .wpo-fun-fact-grids,
+    .wpo-fun-fact-section-s2 .wpo-fun-fact-grids,
+    .wpo-contact-section .wpo-contact-section-wrapper .wpo-contact-form-area .form-control,
+    .wpo-contact-section-s2 .wpo-contact-section-wrapper .wpo-contact-form-area .form-control,
+    .wpo-team-section .wpo-team-wrap .wpo-team-item .wpo-team-img:before,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item,
+    .wpo-site-footer .wpo-upper-footer::before {
+        border-color: transparentize($theme-color-7, .6);
+    }
+
+    .wpo-header-style-3 .navigation.sticky-on,
+    .wpo-contact-section .wpo-contact-section-wrapper,
+    .wpo-contact-section-s2 .wpo-contact-section-wrapper,
+    .wpo-service-details-text-3 {
+        background-color: darken($theme-color-7, 6%);
+    }
+
+    .wpo-pricing-section-s2 .wpo-section-title h2,
+    .wpo-site-footer .wpo-lower-footer .copyright a {
+        color: $dark-gray;
+    }
+
+    .wpo-blog-single-section .tag-share .tag a:hover {
+        color: $white;
+    }
+
+    @media (max-width: 991px) {
+        .wpo-site-header #navbar {
+            background: darken($theme-color-7, 2%);
+        }
+
+        .wpo-site-header #navbar>ul .menu-item-has-children>a:before {
+            background: none !important;
+        }
+
+        .wpo-site-header #navbar ul li a:hover,
+        .wpo-site-header #navbar ul li a:focus {
+            color: $white;
+        }
+    }
+
+    .wpo-blog-single-section .tag-share-s2 .tag a {
+        background: none !important;
+    }
+
+}
+
+// color-8 here
+
+.color8 {
+
+    .theme-btn,
+    .theme-btn-s3,
+    .theme-btn-s4 {
+        background: $theme-color-8;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background: $theme-color-8;
+
+            &:after {
+                border: 1px solid $theme-color-8;
+            }
+        }
+    }
+
+    .view-cart-btn {
+        background: $theme-color-8;
+
+        &:hover {
+            background-color: darken($theme-color-8, 8%);
+        }
+
+        &.s1 {
+            background: transparentize($theme-color-8, .8);
+            color: $theme-color-8;
+        }
+
+    }
+
+
+    .wpo-site-header {
+        .navbar-header {
+            .logo {
+                color: $theme-color-8;
+            }
+        }
+
+        #navbar {
+            ul {
+                li {
+                    a {
+                        &::before {
+                            background: $theme-color-8;
+                        }
+
+                        &:hover,
+                        &:focus {
+                            color: $theme-color-8;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mini-cart .cart-count {
+            background: $theme-color-8;
+        }
+
+        .mini-checkout-price span {
+            color: $theme-color-8;
+        }
+    }
+
+    .static-hero .slide-title h2 span {
+        color: $theme-color-8;
+    }
+
+    .couple-section ul li a {
+        color: $theme-color-8;
+    }
+
+    .wpo-story-section .tab-area .nav-tabs .nav-item .nav-link.active {
+        color: $theme-color-8;
+    }
+
+    .wpo-story-section .tab-area .wpo-story-item .wpo-story-content .wpo-story-content-inner span {
+        color: $theme-color-8;
+    }
+
+    .back-to-top {
+        background-color: transparentize($theme-color-8, .7);
+        border: 2px solid $theme-color-8;
+
+        &:hover {
+            background: $theme-color-8;
+        }
+    }
+
+
+    .theme-btn,
+    .view-cart-btn,
+    .theme-btn-s3,
+    .theme-btn-s4 {
+        color: $white;
+    }
+
+
+    .wpo-site-header .social-info ul li a i:before,
+    .mini-cart-content .mini-cart-item-des a:hover,
+    .wpo-hero-section .wpo-hero-items .owl-item.active.center .wpo-hero-img .wpo-hero-text h2,
+    .wpo-Service-section .wpo-Service-item .wpo-Service-text a:hover,
+    .wpo-Service-section-s2 .wpo-Service-item .wpo-Service-text a:hover,
+    .wpo-Service-section-s3 .wpo-Service-item .wpo-Service-text a:hover,
+    .wpo-testimonial-section .wpo-testimonial-items i,
+    .wpo-testimonial-section .slick-dots li.slick-active button:before,
+    .wpo-portfolio-section .grid .img-holder .portfolio-content h4 a:hover,
+    .wpo-portfolio-section-s4 .grid .img-holder .portfolio-content h4 a:hover,
+    .wpo-banner-section h4,
+    .wpo-team-section .wpo-team-wrap .wpo-team-item .wpo-team-text h3 a:hover,
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-text h3 a:hover,
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-img ul li a,
+    .wpo-blog-section .wpo-blog-items .wpo-blog-grids .grid .wpo-blog-item .wpo-blog-content h2 a:hover,
+    .wpo-blog-section-s2 .wpo-blog-items .wpo-blog-grids .grid .wpo-blog-item .wpo-blog-content h2 a:hover,
+    .wpo-blog-section-s3 .wpo-blog-items .wpo-blog-grids .grid .wpo-blog-item .wpo-blog-content h2 a:hover,
+    .wpo-site-footer .footer-link ul li a:hover,
+    .wpo-wedding-date #clock .time,
+    .wpo-couple-section .couple-area .couple-item .couple-text ul li a,
+    .wpo-couple-section-s2 .couple-area .couple-item .couple-text ul li a,
+    .wpo-couple-section-s3 .couple-area .couple-item .couple-text ul li a,
+    .wpo-couple-section-s4 .couple-area .couple-item .couple-text ul li a,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text ul li a,
+    .static-hero-s4 .wpo-event-item .wpo-event-text ul li a,
+    .forget-btn a,
+    .or span,
+    .subText a,
+    .wpo-shop-sidebar .widget_price_filter .filter-price button,
+    .wpo-checkout-area .cout-order-area .oreder-item ul .o-bottom,
+    .wpo-shop-single-section .product-details .price,
+    .blog-sidebar .category-widget ul a:hover,
+    .blog-sidebar .category-widget ul li:hover:before,
+    .wpo-blog-pg-section .post a.read-more:hover,
+    .wpo-blog-pg-section .post h3 a:hover,
+    .wpo-blog-pg-section .entry-meta ul li a:hover,
+    .blog-sidebar .recent-post-widget .post h4 a:hover,
+    .wpo-blog-single-section .tag-share .tag a:hover,
+    .wpo-blog-single-section .tag-share-s2 .tag a:hover,
+    .wpo-blog-single-section .author-box .social-link a:hover,
+    .wpo-blog-single-section .more-posts a:hover .post-control-link,
+    .wpo-blog-single-section .comments-area .comment-reply-link:hover,
+    .blog-sidebar .about-widget a:hover {
+        color: $theme-color-8;
+    }
+
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-text:before,
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-img ul li a:hover,
+    .wpo-site-footer .link-widget ul li a:hover,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:checked+label:after,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:not(:checked)+label:after,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:checked+label:after,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:not(:checked)+label:after,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:checked+label:after,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:not(:checked)+label:after,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .theme-btn,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .view-cart-btn,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .theme-btn,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .view-cart-btn,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .theme-btn,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .view-cart-btn,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text ul li a:before,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-img::before,
+    .static-hero-s4 .wpo-event-item .wpo-event-text ul li a:before,
+    .wpo-shop-sidebar .search-widget form button,
+    .wpo-shop-single-section .product-details ul li:before,
+    .wpo-shop-single-section .product-details .product-option .theme-btn:hover,
+    .wpo-shop-single-section .product-details .product-option .view-cart-btn:hover,
+    .wpo-shop-single-section .product-details .product-option .product-row>div:last-child .theme-btn:hover,
+    .wpo-shop-single-section .product-details .product-option .product-row>div:last-child .view-cart-btn:hover,
+    .wpo-accountForm .wpo-accountBtn,
+    .wpo-shop-single-section .product-details .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-up:hover,
+    .wpo-shop-single-section .product-details .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-down:hover,
+    .wpo-shop-single-section .product-info .nav-tabs a:before,
+    .wpo-checkout-area .create-account button:hover,
+    .cart-area .cart-wrap .action a:hover,
+    .cart-area .submit-btn-area button:hover,
+    .cart-area .cart-wrap .action li.c-btn a,
+    .blog-sidebar .search-widget form button,
+    .blog-sidebar .widget h3:before,
+    .wpo-blog-pg-section .entry-meta ul li+li:before,
+    .blog-sidebar .tag-widget ul li a:hover,
+    .pagination-wrapper .pg-pagination .active a,
+    .pagination-wrapper .pg-pagination li a:hover,
+    .wpo-blog-pg-section .format-gallery .owl-nav [class*=owl-]:hover,
+    .wpo-blog-single-section .tag-share .tag a:hover,
+    .wpo-blog-single-section .tag-share-s2 .tag a:hover,
+    .wpo-blog-single-section .entry-meta ul li+li:before,
+    .wpo-site-header .mobail-menu button,
+    .wpo-site-header #navbar>ul>li .sub-menu a:after {
+        background: $theme-color-8;
+    }
+
+
+    .wpo-section-title h2::after,
+    .wpo-section-title-s2 h2::after,
+    .wpo-section-title h2::before,
+    .wpo-section-title-s2 h2::before,
+    .wpo-story-section-s4 .wpo-story-wrap .wpo-story-item .wpo-story-content-wrap .wpo-story-content-img:before,
+    .wpo-story-section-s4 .wpo-story-wrap .wpo-story-item .wpo-story-img-wrap:before,
+    .wpo-checkout-area .coupon,
+    .blog-sidebar .about-widget,
+    .blog-sidebar .search-widget input,
+    .blog-sidebar .category-widget ul a span,
+    .wpo-site-footer,
+    .pagination-wrapper .pg-pagination li a,
+    .wpo-blog-single-section .post blockquote,
+    .wpo-blog-single-section .tag-share .tag a,
+    .wpo-blog-single-section .tag-share-s2 .tag a,
+    .blog-sidebar .tag-widget ul li a,
+    .wpo-blog-pg-section .format-standard,
+    .wpo-blog-pg-section .format-quote {
+        background: transparentize($theme-color-8, .9);
+    }
+
+    .wpo-pricing-section .wpo-pricing-wrap .wpo-pricing-item:before,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item .round-1,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item .round-2,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item .round-3,
+    .wpo-blog-single-section .comment-respond .form-submit input {
+        background: transparentize($theme-color-8, .5);
+    }
+
+    .wpo-blog-pg-section .format-standard:before {
+        color: transparentize($theme-color-8, .8);
+    }
+
+    .wpo-event-section .wpo-event-wrap .wpo-event-item,
+    .wpo-accountForm .wpo-accountBtn,
+    .wpo-checkout-area .coupon label,
+    .wpo-checkout-area .s2 .coupon-3,
+    .wpo-checkout-area .s2.coupon-2 .coupon-3 label,
+    .wpo-checkout-area .s1.active-border .coupon-active label,
+    .wpo-checkout-area .s3.coupon-2 .coupon-3 label,
+    .wpo-couple-section-s3 .couple-area .couple-item .couple-img::before,
+    .wpo-story-section-s3 .wpo-story-wrap .wpo-story-item .wpo-story-img-wrap::before,
+    .wpo-couple-section-s3 .couple-area .couple-item .couple-img::after {
+        border-color: $theme-color-8;
+    }
+
+    .wpo-contact-section .wpo-contact-section-wrapper .wpo-contact-form-area,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text h2,
+    .wpo-blog-single-section .post blockquote:before,
+    .wpo-fun-fact-section .wpo-fun-fact-grids,
+    .wpo-fun-fact-section-s2 .wpo-fun-fact-grids,
+    .wpo-contact-section .wpo-contact-section-wrapper .wpo-contact-form-area .form-control,
+    .wpo-contact-section-s2 .wpo-contact-section-wrapper .wpo-contact-form-area .form-control,
+    .wpo-team-section .wpo-team-wrap .wpo-team-item .wpo-team-img:before,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item,
+    .wpo-site-footer .wpo-upper-footer::before {
+        border-color: transparentize($theme-color-8, .6);
+    }
+
+    .wpo-header-style-3 .navigation.sticky-on,
+    .wpo-contact-section .wpo-contact-section-wrapper,
+    .wpo-contact-section-s2 .wpo-contact-section-wrapper,
+    .wpo-service-details-text-3 {
+        background-color: darken($theme-color-8, 6%);
+    }
+
+    .wpo-pricing-section-s2 .wpo-section-title h2,
+    .wpo-site-footer .wpo-lower-footer .copyright a {
+        color: $dark-gray;
+    }
+
+    .wpo-blog-single-section .tag-share .tag a:hover {
+        color: $white;
+    }
+
+    @media (max-width: 991px) {
+        .wpo-site-header #navbar {
+            background: darken($theme-color-8, 2%);
+        }
+
+        .wpo-site-header #navbar>ul .menu-item-has-children>a:before {
+            background: none !important;
+        }
+
+        .wpo-site-header #navbar ul li a:hover,
+        .wpo-site-header #navbar ul li a:focus {
+            color: $white;
+        }
+    }
+
+    .wpo-blog-single-section .tag-share-s2 .tag a {
+        background: none !important;
+    }
+
+}
+
+
+// color-9 here
+
+.color9 {
+
+    .theme-btn,
+    .theme-btn-s3,
+    .theme-btn-s4 {
+        background: $theme-color-9;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background: $theme-color-9;
+
+            &:after {
+                border: 1px solid $theme-color-9;
+            }
+        }
+    }
+
+    .view-cart-btn {
+        background: $theme-color-9;
+
+        &:hover {
+            background-color: darken($theme-color-9, 8%);
+        }
+
+        &.s1 {
+            background: transparentize($theme-color-9, .8);
+            color: $theme-color-9;
+        }
+
+    }
+
+
+    .wpo-site-header {
+        .navbar-header {
+            .logo {
+                color: $theme-color-9;
+            }
+        }
+
+        #navbar {
+            ul {
+                li {
+                    a {
+                        &::before {
+                            background: $theme-color-9;
+                        }
+
+                        &:hover,
+                        &:focus {
+                            color: $theme-color-9;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mini-cart .cart-count {
+            background: $theme-color-9;
+        }
+
+        .mini-checkout-price span {
+            color: $theme-color-9;
+        }
+    }
+
+    .static-hero .slide-title h2 span {
+        color: $theme-color-9;
+    }
+
+    .couple-section ul li a {
+        color: $theme-color-9;
+    }
+
+    .wpo-story-section .tab-area .nav-tabs .nav-item .nav-link.active {
+        color: $theme-color-9;
+    }
+
+    .wpo-story-section .tab-area .wpo-story-item .wpo-story-content .wpo-story-content-inner span {
+        color: $theme-color-9;
+    }
+
+    .back-to-top {
+        background-color: transparentize($theme-color-9, .7);
+        border: 2px solid $theme-color-9;
+
+        &:hover {
+            background: $theme-color-9;
+        }
+    }
+
+
+    .theme-btn,
+    .view-cart-btn,
+    .theme-btn-s3,
+    .theme-btn-s4 {
+        color: $white;
+    }
+
+
+    .wpo-site-header .social-info ul li a i:before,
+    .mini-cart-content .mini-cart-item-des a:hover,
+    .wpo-hero-section .wpo-hero-items .owl-item.active.center .wpo-hero-img .wpo-hero-text h2,
+    .wpo-Service-section .wpo-Service-item .wpo-Service-text a:hover,
+    .wpo-Service-section-s2 .wpo-Service-item .wpo-Service-text a:hover,
+    .wpo-Service-section-s3 .wpo-Service-item .wpo-Service-text a:hover,
+    .wpo-testimonial-section .wpo-testimonial-items i,
+    .wpo-testimonial-section .slick-dots li.slick-active button:before,
+    .wpo-portfolio-section .grid .img-holder .portfolio-content h4 a:hover,
+    .wpo-portfolio-section-s4 .grid .img-holder .portfolio-content h4 a:hover,
+    .wpo-banner-section h4,
+    .wpo-team-section .wpo-team-wrap .wpo-team-item .wpo-team-text h3 a:hover,
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-text h3 a:hover,
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-img ul li a,
+    .wpo-blog-section .wpo-blog-items .wpo-blog-grids .grid .wpo-blog-item .wpo-blog-content h2 a:hover,
+    .wpo-blog-section-s2 .wpo-blog-items .wpo-blog-grids .grid .wpo-blog-item .wpo-blog-content h2 a:hover,
+    .wpo-blog-section-s3 .wpo-blog-items .wpo-blog-grids .grid .wpo-blog-item .wpo-blog-content h2 a:hover,
+    .wpo-site-footer .footer-link ul li a:hover,
+    .wpo-wedding-date #clock .time,
+    .wpo-couple-section .couple-area .couple-item .couple-text ul li a,
+    .wpo-couple-section-s2 .couple-area .couple-item .couple-text ul li a,
+    .wpo-couple-section-s3 .couple-area .couple-item .couple-text ul li a,
+    .wpo-couple-section-s4 .couple-area .couple-item .couple-text ul li a,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text ul li a,
+    .static-hero-s4 .wpo-event-item .wpo-event-text ul li a,
+    .forget-btn a,
+    .or span,
+    .subText a,
+    .wpo-shop-sidebar .widget_price_filter .filter-price button,
+    .wpo-checkout-area .cout-order-area .oreder-item ul .o-bottom,
+    .wpo-shop-single-section .product-details .price,
+    .blog-sidebar .category-widget ul a:hover,
+    .blog-sidebar .category-widget ul li:hover:before,
+    .wpo-blog-pg-section .post a.read-more:hover,
+    .wpo-blog-pg-section .post h3 a:hover,
+    .wpo-blog-pg-section .entry-meta ul li a:hover,
+    .blog-sidebar .recent-post-widget .post h4 a:hover,
+    .wpo-blog-single-section .tag-share .tag a:hover,
+    .wpo-blog-single-section .tag-share-s2 .tag a:hover,
+    .wpo-blog-single-section .author-box .social-link a:hover,
+    .wpo-blog-single-section .more-posts a:hover .post-control-link,
+    .wpo-blog-single-section .comments-area .comment-reply-link:hover,
+    .blog-sidebar .about-widget a:hover {
+        color: $theme-color-9;
+    }
+
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-text:before,
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-img ul li a:hover,
+    .wpo-site-footer .link-widget ul li a:hover,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:checked+label:after,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:not(:checked)+label:after,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:checked+label:after,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:not(:checked)+label:after,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:checked+label:after,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:not(:checked)+label:after,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .theme-btn,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .view-cart-btn,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .theme-btn,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .view-cart-btn,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .theme-btn,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .view-cart-btn,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text ul li a:before,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-img::before,
+    .static-hero-s4 .wpo-event-item .wpo-event-text ul li a:before,
+    .wpo-shop-sidebar .search-widget form button,
+    .wpo-shop-single-section .product-details ul li:before,
+    .wpo-shop-single-section .product-details .product-option .theme-btn:hover,
+    .wpo-shop-single-section .product-details .product-option .view-cart-btn:hover,
+    .wpo-shop-single-section .product-details .product-option .product-row>div:last-child .theme-btn:hover,
+    .wpo-shop-single-section .product-details .product-option .product-row>div:last-child .view-cart-btn:hover,
+    .wpo-accountForm .wpo-accountBtn,
+    .wpo-shop-single-section .product-details .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-up:hover,
+    .wpo-shop-single-section .product-details .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-down:hover,
+    .wpo-shop-single-section .product-info .nav-tabs a:before,
+    .wpo-checkout-area .create-account button:hover,
+    .cart-area .cart-wrap .action a:hover,
+    .cart-area .submit-btn-area button:hover,
+    .cart-area .cart-wrap .action li.c-btn a,
+    .blog-sidebar .search-widget form button,
+    .blog-sidebar .widget h3:before,
+    .wpo-blog-pg-section .entry-meta ul li+li:before,
+    .blog-sidebar .tag-widget ul li a:hover,
+    .pagination-wrapper .pg-pagination .active a,
+    .pagination-wrapper .pg-pagination li a:hover,
+    .wpo-blog-pg-section .format-gallery .owl-nav [class*=owl-]:hover,
+    .wpo-blog-single-section .tag-share .tag a:hover,
+    .wpo-blog-single-section .tag-share-s2 .tag a:hover,
+    .wpo-blog-single-section .entry-meta ul li+li:before,
+    .wpo-site-header .mobail-menu button,
+    .wpo-site-header #navbar>ul>li .sub-menu a:after {
+        background: $theme-color-9;
+    }
+
+
+    .wpo-section-title h2::after,
+    .wpo-section-title-s2 h2::after,
+    .wpo-section-title h2::before,
+    .wpo-section-title-s2 h2::before,
+    .wpo-story-section-s4 .wpo-story-wrap .wpo-story-item .wpo-story-content-wrap .wpo-story-content-img:before,
+    .wpo-story-section-s4 .wpo-story-wrap .wpo-story-item .wpo-story-img-wrap:before,
+    .wpo-checkout-area .coupon,
+    .blog-sidebar .about-widget,
+    .blog-sidebar .search-widget input,
+    .blog-sidebar .category-widget ul a span,
+    .wpo-site-footer,
+    .pagination-wrapper .pg-pagination li a,
+    .wpo-blog-single-section .post blockquote,
+    .wpo-blog-single-section .tag-share .tag a,
+    .wpo-blog-single-section .tag-share-s2 .tag a,
+    .blog-sidebar .tag-widget ul li a,
+    .wpo-blog-pg-section .format-standard,
+    .wpo-blog-pg-section .format-quote {
+        background: transparentize($theme-color-9, .9);
+    }
+
+    .wpo-pricing-section .wpo-pricing-wrap .wpo-pricing-item:before,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item .round-1,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item .round-2,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item .round-3,
+    .wpo-blog-single-section .comment-respond .form-submit input {
+        background: transparentize($theme-color-9, .5);
+    }
+
+    .wpo-blog-pg-section .format-standard:before {
+        color: transparentize($theme-color-9, .8);
+    }
+
+    .wpo-event-section .wpo-event-wrap .wpo-event-item,
+    .wpo-accountForm .wpo-accountBtn,
+    .wpo-checkout-area .coupon label,
+    .wpo-checkout-area .s2 .coupon-3,
+    .wpo-checkout-area .s2.coupon-2 .coupon-3 label,
+    .wpo-checkout-area .s1.active-border .coupon-active label,
+    .wpo-checkout-area .s3.coupon-2 .coupon-3 label,
+    .wpo-couple-section-s3 .couple-area .couple-item .couple-img::before,
+    .wpo-story-section-s3 .wpo-story-wrap .wpo-story-item .wpo-story-img-wrap::before,
+    .wpo-couple-section-s3 .couple-area .couple-item .couple-img::after {
+        border-color: $theme-color-9;
+    }
+
+    .wpo-contact-section .wpo-contact-section-wrapper .wpo-contact-form-area,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text h2,
+    .wpo-blog-single-section .post blockquote:before,
+    .wpo-fun-fact-section .wpo-fun-fact-grids,
+    .wpo-fun-fact-section-s2 .wpo-fun-fact-grids,
+    .wpo-contact-section .wpo-contact-section-wrapper .wpo-contact-form-area .form-control,
+    .wpo-contact-section-s2 .wpo-contact-section-wrapper .wpo-contact-form-area .form-control,
+    .wpo-team-section .wpo-team-wrap .wpo-team-item .wpo-team-img:before,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item,
+    .wpo-site-footer .wpo-upper-footer::before {
+        border-color: transparentize($theme-color-9, .6);
+    }
+
+    .wpo-header-style-3 .navigation.sticky-on,
+    .wpo-contact-section .wpo-contact-section-wrapper,
+    .wpo-contact-section-s2 .wpo-contact-section-wrapper,
+    .wpo-service-details-text-3 {
+        background-color: darken($theme-color-9, 6%);
+    }
+
+    .wpo-pricing-section-s2 .wpo-section-title h2,
+    .wpo-site-footer .wpo-lower-footer .copyright a {
+        color: $dark-gray;
+    }
+
+    .wpo-blog-single-section .tag-share .tag a:hover {
+        color: $white;
+    }
+
+    @media (max-width: 991px) {
+        .wpo-site-header #navbar {
+            background: darken($theme-color-9, 2%);
+        }
+
+        .wpo-site-header #navbar>ul .menu-item-has-children>a:before {
+            background: none !important;
+        }
+
+        .wpo-site-header #navbar ul li a:hover,
+        .wpo-site-header #navbar ul li a:focus {
+            color: $white;
+        }
+    }
+
+    .wpo-blog-single-section .tag-share-s2 .tag a {
+        background: none !important;
+    }
+
+}
+
+
+// color-10 here
+
+.color10 {
+
+    .theme-btn,
+    .theme-btn-s3,
+    .theme-btn-s4 {
+        background: $theme-color-10;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background: $theme-color-10;
+
+            &:after {
+                border: 1px solid $theme-color-10;
+            }
+        }
+    }
+
+    .view-cart-btn {
+        background: $theme-color-10;
+
+        &:hover {
+            background-color: darken($theme-color-10, 8%);
+        }
+
+        &.s1 {
+            background: transparentize($theme-color-10, .8);
+            color: $theme-color-10;
+        }
+
+    }
+
+
+    .wpo-site-header {
+        .navbar-header {
+            .logo {
+                color: $theme-color-10;
+            }
+        }
+
+        #navbar {
+            ul {
+                li {
+                    a {
+                        &::before {
+                            background: $theme-color-10;
+                        }
+
+                        &:hover,
+                        &:focus {
+                            color: $theme-color-10;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mini-cart .cart-count {
+            background: $theme-color-10;
+        }
+
+        .mini-checkout-price span {
+            color: $theme-color-10;
+        }
+    }
+
+    .static-hero .slide-title h2 span {
+        color: $theme-color-10;
+    }
+
+    .couple-section ul li a {
+        color: $theme-color-10;
+    }
+
+    .wpo-story-section .tab-area .nav-tabs .nav-item .nav-link.active {
+        color: $theme-color-10;
+    }
+
+    .wpo-story-section .tab-area .wpo-story-item .wpo-story-content .wpo-story-content-inner span {
+        color: $theme-color-10;
+    }
+
+    .back-to-top {
+        background-color: transparentize($theme-color-10, .7);
+        border: 2px solid $theme-color-10;
+
+        &:hover {
+            background: $theme-color-10;
+        }
+    }
+
+
+    .theme-btn,
+    .view-cart-btn,
+    .theme-btn-s3,
+    .theme-btn-s4 {
+        color: $white;
+    }
+
+
+    .wpo-site-header .social-info ul li a i:before,
+    .mini-cart-content .mini-cart-item-des a:hover,
+    .wpo-hero-section .wpo-hero-items .owl-item.active.center .wpo-hero-img .wpo-hero-text h2,
+    .wpo-Service-section .wpo-Service-item .wpo-Service-text a:hover,
+    .wpo-Service-section-s2 .wpo-Service-item .wpo-Service-text a:hover,
+    .wpo-Service-section-s3 .wpo-Service-item .wpo-Service-text a:hover,
+    .wpo-testimonial-section .wpo-testimonial-items i,
+    .wpo-testimonial-section .slick-dots li.slick-active button:before,
+    .wpo-portfolio-section .grid .img-holder .portfolio-content h4 a:hover,
+    .wpo-portfolio-section-s4 .grid .img-holder .portfolio-content h4 a:hover,
+    .wpo-banner-section h4,
+    .wpo-team-section .wpo-team-wrap .wpo-team-item .wpo-team-text h3 a:hover,
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-text h3 a:hover,
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-img ul li a,
+    .wpo-blog-section .wpo-blog-items .wpo-blog-grids .grid .wpo-blog-item .wpo-blog-content h2 a:hover,
+    .wpo-blog-section-s2 .wpo-blog-items .wpo-blog-grids .grid .wpo-blog-item .wpo-blog-content h2 a:hover,
+    .wpo-blog-section-s3 .wpo-blog-items .wpo-blog-grids .grid .wpo-blog-item .wpo-blog-content h2 a:hover,
+    .wpo-site-footer .footer-link ul li a:hover,
+    .wpo-wedding-date #clock .time,
+    .wpo-couple-section .couple-area .couple-item .couple-text ul li a,
+    .wpo-couple-section-s2 .couple-area .couple-item .couple-text ul li a,
+    .wpo-couple-section-s3 .couple-area .couple-item .couple-text ul li a,
+    .wpo-couple-section-s4 .couple-area .couple-item .couple-text ul li a,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text ul li a,
+    .static-hero-s4 .wpo-event-item .wpo-event-text ul li a,
+    .forget-btn a,
+    .or span,
+    .subText a,
+    .wpo-shop-sidebar .widget_price_filter .filter-price button,
+    .wpo-checkout-area .cout-order-area .oreder-item ul .o-bottom,
+    .wpo-shop-single-section .product-details .price,
+    .blog-sidebar .category-widget ul a:hover,
+    .blog-sidebar .category-widget ul li:hover:before,
+    .wpo-blog-pg-section .post a.read-more:hover,
+    .wpo-blog-pg-section .post h3 a:hover,
+    .wpo-blog-pg-section .entry-meta ul li a:hover,
+    .blog-sidebar .recent-post-widget .post h4 a:hover,
+    .wpo-blog-single-section .tag-share .tag a:hover,
+    .wpo-blog-single-section .tag-share-s2 .tag a:hover,
+    .wpo-blog-single-section .author-box .social-link a:hover,
+    .wpo-blog-single-section .more-posts a:hover .post-control-link,
+    .wpo-blog-single-section .comments-area .comment-reply-link:hover,
+    .blog-sidebar .about-widget a:hover {
+        color: $theme-color-10;
+    }
+
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-text:before,
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-img ul li a:hover,
+    .wpo-site-footer .link-widget ul li a:hover,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:checked+label:after,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:not(:checked)+label:after,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:checked+label:after,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:not(:checked)+label:after,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:checked+label:after,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:not(:checked)+label:after,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .theme-btn,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .view-cart-btn,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .theme-btn,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .view-cart-btn,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .theme-btn,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .view-cart-btn,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text ul li a:before,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-img::before,
+    .static-hero-s4 .wpo-event-item .wpo-event-text ul li a:before,
+    .wpo-shop-sidebar .search-widget form button,
+    .wpo-shop-single-section .product-details ul li:before,
+    .wpo-shop-single-section .product-details .product-option .theme-btn:hover,
+    .wpo-shop-single-section .product-details .product-option .view-cart-btn:hover,
+    .wpo-shop-single-section .product-details .product-option .product-row>div:last-child .theme-btn:hover,
+    .wpo-shop-single-section .product-details .product-option .product-row>div:last-child .view-cart-btn:hover,
+    .wpo-accountForm .wpo-accountBtn,
+    .wpo-shop-single-section .product-details .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-up:hover,
+    .wpo-shop-single-section .product-details .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-down:hover,
+    .wpo-shop-single-section .product-info .nav-tabs a:before,
+    .wpo-checkout-area .create-account button:hover,
+    .cart-area .cart-wrap .action a:hover,
+    .cart-area .submit-btn-area button:hover,
+    .cart-area .cart-wrap .action li.c-btn a,
+    .blog-sidebar .search-widget form button,
+    .blog-sidebar .widget h3:before,
+    .wpo-blog-pg-section .entry-meta ul li+li:before,
+    .blog-sidebar .tag-widget ul li a:hover,
+    .pagination-wrapper .pg-pagination .active a,
+    .pagination-wrapper .pg-pagination li a:hover,
+    .wpo-blog-pg-section .format-gallery .owl-nav [class*=owl-]:hover,
+    .wpo-blog-single-section .tag-share .tag a:hover,
+    .wpo-blog-single-section .tag-share-s2 .tag a:hover,
+    .wpo-blog-single-section .entry-meta ul li+li:before,
+    .wpo-site-header .mobail-menu button,
+    .wpo-site-header #navbar>ul>li .sub-menu a:after {
+        background: $theme-color-10;
+    }
+
+
+    .wpo-section-title h2::after,
+    .wpo-section-title-s2 h2::after,
+    .wpo-section-title h2::before,
+    .wpo-section-title-s2 h2::before,
+    .wpo-story-section-s4 .wpo-story-wrap .wpo-story-item .wpo-story-content-wrap .wpo-story-content-img:before,
+    .wpo-story-section-s4 .wpo-story-wrap .wpo-story-item .wpo-story-img-wrap:before,
+    .wpo-checkout-area .coupon,
+    .blog-sidebar .about-widget,
+    .blog-sidebar .search-widget input,
+    .blog-sidebar .category-widget ul a span,
+    .wpo-site-footer,
+    .pagination-wrapper .pg-pagination li a,
+    .wpo-blog-single-section .post blockquote,
+    .wpo-blog-single-section .tag-share .tag a,
+    .wpo-blog-single-section .tag-share-s2 .tag a,
+    .blog-sidebar .tag-widget ul li a,
+    .wpo-blog-pg-section .format-standard,
+    .wpo-blog-pg-section .format-quote {
+        background: transparentize($theme-color-10, .9);
+    }
+
+    .wpo-pricing-section .wpo-pricing-wrap .wpo-pricing-item:before,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item .round-1,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item .round-2,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item .round-3,
+    .wpo-blog-single-section .comment-respond .form-submit input {
+        background: transparentize($theme-color-10, .5);
+    }
+
+    .wpo-blog-pg-section .format-standard:before {
+        color: transparentize($theme-color-10, .8);
+    }
+
+    .wpo-event-section .wpo-event-wrap .wpo-event-item,
+    .wpo-accountForm .wpo-accountBtn,
+    .wpo-checkout-area .coupon label,
+    .wpo-checkout-area .s2 .coupon-3,
+    .wpo-checkout-area .s2.coupon-2 .coupon-3 label,
+    .wpo-checkout-area .s1.active-border .coupon-active label,
+    .wpo-checkout-area .s3.coupon-2 .coupon-3 label,
+    .wpo-couple-section-s3 .couple-area .couple-item .couple-img::before,
+    .wpo-story-section-s3 .wpo-story-wrap .wpo-story-item .wpo-story-img-wrap::before,
+    .wpo-couple-section-s3 .couple-area .couple-item .couple-img::after {
+        border-color: $theme-color-10;
+    }
+
+    .wpo-contact-section .wpo-contact-section-wrapper .wpo-contact-form-area,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text h2,
+    .wpo-blog-single-section .post blockquote:before,
+    .wpo-fun-fact-section .wpo-fun-fact-grids,
+    .wpo-fun-fact-section-s2 .wpo-fun-fact-grids,
+    .wpo-contact-section .wpo-contact-section-wrapper .wpo-contact-form-area .form-control,
+    .wpo-contact-section-s2 .wpo-contact-section-wrapper .wpo-contact-form-area .form-control,
+    .wpo-team-section .wpo-team-wrap .wpo-team-item .wpo-team-img:before,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item,
+    .wpo-site-footer .wpo-upper-footer::before {
+        border-color: transparentize($theme-color-10, .6);
+    }
+
+    .wpo-header-style-3 .navigation.sticky-on,
+    .wpo-contact-section .wpo-contact-section-wrapper,
+    .wpo-contact-section-s2 .wpo-contact-section-wrapper,
+    .wpo-service-details-text-3 {
+        background-color: darken($theme-color-10, 6%);
+    }
+
+    .wpo-pricing-section-s2 .wpo-section-title h2,
+    .wpo-site-footer .wpo-lower-footer .copyright a {
+        color: $dark-gray;
+    }
+
+    .wpo-blog-single-section .tag-share .tag a:hover {
+        color: $white;
+    }
+
+    @media (max-width: 991px) {
+        .wpo-site-header #navbar {
+            background: darken($theme-color-10, 2%);
+        }
+
+        .wpo-site-header #navbar>ul .menu-item-has-children>a:before {
+            background: none !important;
+        }
+
+        .wpo-site-header #navbar ul li a:hover,
+        .wpo-site-header #navbar ul li a:focus {
+            color: $white;
+        }
+    }
+
+    .wpo-blog-single-section .tag-share-s2 .tag a {
+        background: none !important;
+    }
+
+}
+
+
+// color-11 here
+
+.color11 {
+
+    .theme-btn,
+    .theme-btn-s3,
+    .theme-btn-s4 {
+        background: $theme-color-11;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background: $theme-color-11;
+
+            &:after {
+                border: 1px solid $theme-color-11;
+            }
+        }
+    }
+
+    .view-cart-btn {
+        background: $theme-color-11;
+
+        &:hover {
+            background-color: darken($theme-color-11, 8%);
+        }
+
+        &.s1 {
+            background: transparentize($theme-color-11, .8);
+            color: $theme-color-11;
+        }
+
+    }
+
+
+    .wpo-site-header {
+        .navbar-header {
+            .logo {
+                color: $theme-color-11;
+            }
+        }
+
+        #navbar {
+            ul {
+                li {
+                    a {
+                        &::before {
+                            background: $theme-color-11;
+                        }
+
+                        &:hover,
+                        &:focus {
+                            color: $theme-color-11;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mini-cart .cart-count {
+            background: $theme-color-11;
+        }
+
+        .mini-checkout-price span {
+            color: $theme-color-11;
+        }
+    }
+
+    .static-hero .slide-title h2 span {
+        color: $theme-color-11;
+    }
+
+    .couple-section ul li a {
+        color: $theme-color-11;
+    }
+
+    .wpo-story-section .tab-area .nav-tabs .nav-item .nav-link.active {
+        color: $theme-color-11;
+    }
+
+    .wpo-story-section .tab-area .wpo-story-item .wpo-story-content .wpo-story-content-inner span {
+        color: $theme-color-11;
+    }
+
+    .back-to-top {
+        background-color: transparentize($theme-color-11, .7);
+        border: 2px solid $theme-color-11;
+
+        &:hover {
+            background: $theme-color-11;
+        }
+    }
+
+
+    .theme-btn,
+    .view-cart-btn,
+    .theme-btn-s3,
+    .theme-btn-s4 {
+        color: $white;
+    }
+
+
+    .wpo-site-header .social-info ul li a i:before,
+    .mini-cart-content .mini-cart-item-des a:hover,
+    .wpo-hero-section .wpo-hero-items .owl-item.active.center .wpo-hero-img .wpo-hero-text h2,
+    .wpo-Service-section .wpo-Service-item .wpo-Service-text a:hover,
+    .wpo-Service-section-s2 .wpo-Service-item .wpo-Service-text a:hover,
+    .wpo-Service-section-s3 .wpo-Service-item .wpo-Service-text a:hover,
+    .wpo-testimonial-section .wpo-testimonial-items i,
+    .wpo-testimonial-section .slick-dots li.slick-active button:before,
+    .wpo-portfolio-section .grid .img-holder .portfolio-content h4 a:hover,
+    .wpo-portfolio-section-s4 .grid .img-holder .portfolio-content h4 a:hover,
+    .wpo-banner-section h4,
+    .wpo-team-section .wpo-team-wrap .wpo-team-item .wpo-team-text h3 a:hover,
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-text h3 a:hover,
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-img ul li a,
+    .wpo-blog-section .wpo-blog-items .wpo-blog-grids .grid .wpo-blog-item .wpo-blog-content h2 a:hover,
+    .wpo-blog-section-s2 .wpo-blog-items .wpo-blog-grids .grid .wpo-blog-item .wpo-blog-content h2 a:hover,
+    .wpo-blog-section-s3 .wpo-blog-items .wpo-blog-grids .grid .wpo-blog-item .wpo-blog-content h2 a:hover,
+    .wpo-site-footer .footer-link ul li a:hover,
+    .wpo-wedding-date #clock .time,
+    .wpo-couple-section .couple-area .couple-item .couple-text ul li a,
+    .wpo-couple-section-s2 .couple-area .couple-item .couple-text ul li a,
+    .wpo-couple-section-s3 .couple-area .couple-item .couple-text ul li a,
+    .wpo-couple-section-s4 .couple-area .couple-item .couple-text ul li a,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text ul li a,
+    .static-hero-s4 .wpo-event-item .wpo-event-text ul li a,
+    .forget-btn a,
+    .or span,
+    .subText a,
+    .wpo-shop-sidebar .widget_price_filter .filter-price button,
+    .wpo-checkout-area .cout-order-area .oreder-item ul .o-bottom,
+    .wpo-shop-single-section .product-details .price,
+    .blog-sidebar .category-widget ul a:hover,
+    .blog-sidebar .category-widget ul li:hover:before,
+    .wpo-blog-pg-section .post a.read-more:hover,
+    .wpo-blog-pg-section .post h3 a:hover,
+    .wpo-blog-pg-section .entry-meta ul li a:hover,
+    .blog-sidebar .recent-post-widget .post h4 a:hover,
+    .wpo-blog-single-section .tag-share .tag a:hover,
+    .wpo-blog-single-section .tag-share-s2 .tag a:hover,
+    .wpo-blog-single-section .author-box .social-link a:hover,
+    .wpo-blog-single-section .more-posts a:hover .post-control-link,
+    .wpo-blog-single-section .comments-area .comment-reply-link:hover,
+    .blog-sidebar .about-widget a:hover {
+        color: $theme-color-11;
+    }
+
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-text:before,
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-img ul li a:hover,
+    .wpo-site-footer .link-widget ul li a:hover,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:checked+label:after,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:not(:checked)+label:after,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:checked+label:after,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:not(:checked)+label:after,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:checked+label:after,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:not(:checked)+label:after,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .theme-btn,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .view-cart-btn,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .theme-btn,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .view-cart-btn,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .theme-btn,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .view-cart-btn,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text ul li a:before,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-img::before,
+    .static-hero-s4 .wpo-event-item .wpo-event-text ul li a:before,
+    .wpo-shop-sidebar .search-widget form button,
+    .wpo-shop-single-section .product-details ul li:before,
+    .wpo-shop-single-section .product-details .product-option .theme-btn:hover,
+    .wpo-shop-single-section .product-details .product-option .view-cart-btn:hover,
+    .wpo-shop-single-section .product-details .product-option .product-row>div:last-child .theme-btn:hover,
+    .wpo-shop-single-section .product-details .product-option .product-row>div:last-child .view-cart-btn:hover,
+    .wpo-accountForm .wpo-accountBtn,
+    .wpo-shop-single-section .product-details .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-up:hover,
+    .wpo-shop-single-section .product-details .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-down:hover,
+    .wpo-shop-single-section .product-info .nav-tabs a:before,
+    .wpo-checkout-area .create-account button:hover,
+    .cart-area .cart-wrap .action a:hover,
+    .cart-area .submit-btn-area button:hover,
+    .cart-area .cart-wrap .action li.c-btn a,
+    .blog-sidebar .search-widget form button,
+    .blog-sidebar .widget h3:before,
+    .wpo-blog-pg-section .entry-meta ul li+li:before,
+    .blog-sidebar .tag-widget ul li a:hover,
+    .pagination-wrapper .pg-pagination .active a,
+    .pagination-wrapper .pg-pagination li a:hover,
+    .wpo-blog-pg-section .format-gallery .owl-nav [class*=owl-]:hover,
+    .wpo-blog-single-section .tag-share .tag a:hover,
+    .wpo-blog-single-section .tag-share-s2 .tag a:hover,
+    .wpo-blog-single-section .entry-meta ul li+li:before,
+    .wpo-site-header .mobail-menu button,
+    .wpo-site-header #navbar>ul>li .sub-menu a:after {
+        background: $theme-color-11;
+    }
+
+
+    .wpo-section-title h2::after,
+    .wpo-section-title-s2 h2::after,
+    .wpo-section-title h2::before,
+    .wpo-section-title-s2 h2::before,
+    .wpo-story-section-s4 .wpo-story-wrap .wpo-story-item .wpo-story-content-wrap .wpo-story-content-img:before,
+    .wpo-story-section-s4 .wpo-story-wrap .wpo-story-item .wpo-story-img-wrap:before,
+    .wpo-checkout-area .coupon,
+    .blog-sidebar .about-widget,
+    .blog-sidebar .search-widget input,
+    .blog-sidebar .category-widget ul a span,
+    .wpo-site-footer,
+    .pagination-wrapper .pg-pagination li a,
+    .wpo-blog-single-section .post blockquote,
+    .wpo-blog-single-section .tag-share .tag a,
+    .wpo-blog-single-section .tag-share-s2 .tag a,
+    .blog-sidebar .tag-widget ul li a,
+    .wpo-blog-pg-section .format-standard,
+    .wpo-blog-pg-section .format-quote {
+        background: transparentize($theme-color-11, .9);
+    }
+
+    .wpo-pricing-section .wpo-pricing-wrap .wpo-pricing-item:before,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item .round-1,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item .round-2,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item .round-3,
+    .wpo-blog-single-section .comment-respond .form-submit input {
+        background: transparentize($theme-color-11, .5);
+    }
+
+    .wpo-blog-pg-section .format-standard:before {
+        color: transparentize($theme-color-11, .8);
+    }
+
+    .wpo-event-section .wpo-event-wrap .wpo-event-item,
+    .wpo-accountForm .wpo-accountBtn,
+    .wpo-checkout-area .coupon label,
+    .wpo-checkout-area .s2 .coupon-3,
+    .wpo-checkout-area .s2.coupon-2 .coupon-3 label,
+    .wpo-checkout-area .s1.active-border .coupon-active label,
+    .wpo-checkout-area .s3.coupon-2 .coupon-3 label,
+    .wpo-couple-section-s3 .couple-area .couple-item .couple-img::before,
+    .wpo-story-section-s3 .wpo-story-wrap .wpo-story-item .wpo-story-img-wrap::before,
+    .wpo-couple-section-s3 .couple-area .couple-item .couple-img::after {
+        border-color: $theme-color-11;
+    }
+
+    .wpo-contact-section .wpo-contact-section-wrapper .wpo-contact-form-area,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text h2,
+    .wpo-blog-single-section .post blockquote:before,
+    .wpo-fun-fact-section .wpo-fun-fact-grids,
+    .wpo-fun-fact-section-s2 .wpo-fun-fact-grids,
+    .wpo-contact-section .wpo-contact-section-wrapper .wpo-contact-form-area .form-control,
+    .wpo-contact-section-s2 .wpo-contact-section-wrapper .wpo-contact-form-area .form-control,
+    .wpo-team-section .wpo-team-wrap .wpo-team-item .wpo-team-img:before,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item,
+    .wpo-site-footer .wpo-upper-footer::before {
+        border-color: transparentize($theme-color-11, .6);
+    }
+
+    .wpo-header-style-3 .navigation.sticky-on,
+    .wpo-contact-section .wpo-contact-section-wrapper,
+    .wpo-contact-section-s2 .wpo-contact-section-wrapper,
+    .wpo-service-details-text-3 {
+        background-color: darken($theme-color-11, 6%);
+    }
+
+    .wpo-pricing-section-s2 .wpo-section-title h2,
+    .wpo-site-footer .wpo-lower-footer .copyright a {
+        color: $dark-gray;
+    }
+
+    .wpo-blog-single-section .tag-share .tag a:hover {
+        color: $white;
+    }
+
+    @media (max-width: 991px) {
+        .wpo-site-header #navbar {
+            background: darken($theme-color-11, 2%);
+        }
+
+        .wpo-site-header #navbar>ul .menu-item-has-children>a:before {
+            background: none !important;
+        }
+
+        .wpo-site-header #navbar ul li a:hover,
+        .wpo-site-header #navbar ul li a:focus {
+            color: $white;
+        }
+    }
+
+    .wpo-blog-single-section .tag-share-s2 .tag a {
+        background: none !important;
+    }
+
+}
+
+// color-12 here
+
+.color12 {
+
+    .theme-btn,
+    .theme-btn-s3,
+    .theme-btn-s4 {
+        background: $theme-color-12;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background: $theme-color-12;
+
+            &:after {
+                border: 1px solid $theme-color-12;
+            }
+        }
+    }
+
+    .view-cart-btn {
+        background: $theme-color-12;
+
+        &:hover {
+            background-color: darken($theme-color-12, 8%);
+        }
+
+        &.s1 {
+            background: transparentize($theme-color-12, .8);
+            color: $theme-color-12;
+        }
+
+    }
+
+
+    .wpo-site-header {
+        .navbar-header {
+            .logo {
+                color: $theme-color-12;
+            }
+        }
+
+        #navbar {
+            ul {
+                li {
+                    a {
+                        &::before {
+                            background: $theme-color-12;
+                        }
+
+                        &:hover,
+                        &:focus {
+                            color: $theme-color-12;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mini-cart .cart-count {
+            background: $theme-color-12;
+        }
+
+        .mini-checkout-price span {
+            color: $theme-color-12;
+        }
+    }
+
+    .static-hero .slide-title h2 span {
+        color: $theme-color-12;
+    }
+
+    .couple-section ul li a {
+        color: $theme-color-12;
+    }
+
+    .wpo-story-section .tab-area .nav-tabs .nav-item .nav-link.active {
+        color: $theme-color-12;
+    }
+
+    .wpo-story-section .tab-area .wpo-story-item .wpo-story-content .wpo-story-content-inner span {
+        color: $theme-color-12;
+    }
+
+    .back-to-top {
+        background-color: transparentize($theme-color-12, .7);
+        border: 2px solid $theme-color-12;
+
+        &:hover {
+            background: $theme-color-12;
+        }
+    }
+
+
+    .theme-btn,
+    .view-cart-btn,
+    .theme-btn-s3,
+    .theme-btn-s4 {
+        color: $white;
+    }
+
+
+    .wpo-site-header .social-info ul li a i:before,
+    .mini-cart-content .mini-cart-item-des a:hover,
+    .wpo-hero-section .wpo-hero-items .owl-item.active.center .wpo-hero-img .wpo-hero-text h2,
+    .wpo-Service-section .wpo-Service-item .wpo-Service-text a:hover,
+    .wpo-Service-section-s2 .wpo-Service-item .wpo-Service-text a:hover,
+    .wpo-Service-section-s3 .wpo-Service-item .wpo-Service-text a:hover,
+    .wpo-testimonial-section .wpo-testimonial-items i,
+    .wpo-testimonial-section .slick-dots li.slick-active button:before,
+    .wpo-portfolio-section .grid .img-holder .portfolio-content h4 a:hover,
+    .wpo-portfolio-section-s4 .grid .img-holder .portfolio-content h4 a:hover,
+    .wpo-banner-section h4,
+    .wpo-team-section .wpo-team-wrap .wpo-team-item .wpo-team-text h3 a:hover,
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-text h3 a:hover,
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-img ul li a,
+    .wpo-blog-section .wpo-blog-items .wpo-blog-grids .grid .wpo-blog-item .wpo-blog-content h2 a:hover,
+    .wpo-blog-section-s2 .wpo-blog-items .wpo-blog-grids .grid .wpo-blog-item .wpo-blog-content h2 a:hover,
+    .wpo-blog-section-s3 .wpo-blog-items .wpo-blog-grids .grid .wpo-blog-item .wpo-blog-content h2 a:hover,
+    .wpo-site-footer .footer-link ul li a:hover,
+    .wpo-wedding-date #clock .time,
+    .wpo-couple-section .couple-area .couple-item .couple-text ul li a,
+    .wpo-couple-section-s2 .couple-area .couple-item .couple-text ul li a,
+    .wpo-couple-section-s3 .couple-area .couple-item .couple-text ul li a,
+    .wpo-couple-section-s4 .couple-area .couple-item .couple-text ul li a,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text ul li a,
+    .static-hero-s4 .wpo-event-item .wpo-event-text ul li a,
+    .forget-btn a,
+    .or span,
+    .subText a,
+    .wpo-shop-sidebar .widget_price_filter .filter-price button,
+    .wpo-checkout-area .cout-order-area .oreder-item ul .o-bottom,
+    .wpo-shop-single-section .product-details .price,
+    .blog-sidebar .category-widget ul a:hover,
+    .blog-sidebar .category-widget ul li:hover:before,
+    .wpo-blog-pg-section .post a.read-more:hover,
+    .wpo-blog-pg-section .post h3 a:hover,
+    .wpo-blog-pg-section .entry-meta ul li a:hover,
+    .blog-sidebar .recent-post-widget .post h4 a:hover,
+    .wpo-blog-single-section .tag-share .tag a:hover,
+    .wpo-blog-single-section .tag-share-s2 .tag a:hover,
+    .wpo-blog-single-section .author-box .social-link a:hover,
+    .wpo-blog-single-section .more-posts a:hover .post-control-link,
+    .wpo-blog-single-section .comments-area .comment-reply-link:hover,
+    .blog-sidebar .about-widget a:hover {
+        color: $theme-color-12;
+    }
+
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-text:before,
+    .wpo-product-section .wpo-product-wrap .wpo-product-item .wpo-product-img ul li a:hover,
+    .wpo-site-footer .link-widget ul li a:hover,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:checked+label:after,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:not(:checked)+label:after,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:checked+label:after,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:not(:checked)+label:after,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:checked+label:after,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons [type="radio"]:not(:checked)+label:after,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .theme-btn,
+    .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .view-cart-btn,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .theme-btn,
+    .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .view-cart-btn,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .theme-btn,
+    .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area .view-cart-btn,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text ul li a:before,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-img::before,
+    .static-hero-s4 .wpo-event-item .wpo-event-text ul li a:before,
+    .wpo-shop-sidebar .search-widget form button,
+    .wpo-shop-single-section .product-details ul li:before,
+    .wpo-shop-single-section .product-details .product-option .theme-btn:hover,
+    .wpo-shop-single-section .product-details .product-option .view-cart-btn:hover,
+    .wpo-shop-single-section .product-details .product-option .product-row>div:last-child .theme-btn:hover,
+    .wpo-shop-single-section .product-details .product-option .product-row>div:last-child .view-cart-btn:hover,
+    .wpo-accountForm .wpo-accountBtn,
+    .wpo-shop-single-section .product-details .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-up:hover,
+    .wpo-shop-single-section .product-details .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-down:hover,
+    .wpo-shop-single-section .product-info .nav-tabs a:before,
+    .wpo-checkout-area .create-account button:hover,
+    .cart-area .cart-wrap .action a:hover,
+    .cart-area .submit-btn-area button:hover,
+    .cart-area .cart-wrap .action li.c-btn a,
+    .blog-sidebar .search-widget form button,
+    .blog-sidebar .widget h3:before,
+    .wpo-blog-pg-section .entry-meta ul li+li:before,
+    .blog-sidebar .tag-widget ul li a:hover,
+    .pagination-wrapper .pg-pagination .active a,
+    .pagination-wrapper .pg-pagination li a:hover,
+    .wpo-blog-pg-section .format-gallery .owl-nav [class*=owl-]:hover,
+    .wpo-blog-single-section .tag-share .tag a:hover,
+    .wpo-blog-single-section .tag-share-s2 .tag a:hover,
+    .wpo-blog-single-section .entry-meta ul li+li:before,
+    .wpo-site-header .mobail-menu button,
+    .wpo-site-header #navbar>ul>li .sub-menu a:after {
+        background: $theme-color-12;
+    }
+
+
+    .wpo-section-title h2::after,
+    .wpo-section-title-s2 h2::after,
+    .wpo-section-title h2::before,
+    .wpo-section-title-s2 h2::before,
+    .wpo-story-section-s4 .wpo-story-wrap .wpo-story-item .wpo-story-content-wrap .wpo-story-content-img:before,
+    .wpo-story-section-s4 .wpo-story-wrap .wpo-story-item .wpo-story-img-wrap:before,
+    .wpo-checkout-area .coupon,
+    .blog-sidebar .about-widget,
+    .blog-sidebar .search-widget input,
+    .blog-sidebar .category-widget ul a span,
+    .wpo-site-footer,
+    .pagination-wrapper .pg-pagination li a,
+    .wpo-blog-single-section .post blockquote,
+    .wpo-blog-single-section .tag-share .tag a,
+    .wpo-blog-single-section .tag-share-s2 .tag a,
+    .blog-sidebar .tag-widget ul li a,
+    .wpo-blog-pg-section .format-standard,
+    .wpo-blog-pg-section .format-quote {
+        background: transparentize($theme-color-12, .9);
+    }
+
+    .wpo-pricing-section .wpo-pricing-wrap .wpo-pricing-item:before,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item .round-1,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item .round-2,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item .round-3,
+    .wpo-blog-single-section .comment-respond .form-submit input {
+        background: transparentize($theme-color-12, .5);
+    }
+
+    .wpo-blog-pg-section .format-standard:before {
+        color: transparentize($theme-color-12, .8);
+    }
+
+    .wpo-event-section .wpo-event-wrap .wpo-event-item,
+    .wpo-accountForm .wpo-accountBtn,
+    .wpo-checkout-area .coupon label,
+    .wpo-checkout-area .s2 .coupon-3,
+    .wpo-checkout-area .s2.coupon-2 .coupon-3 label,
+    .wpo-checkout-area .s1.active-border .coupon-active label,
+    .wpo-checkout-area .s3.coupon-2 .coupon-3 label,
+    .wpo-couple-section-s3 .couple-area .couple-item .couple-img::before,
+    .wpo-story-section-s3 .wpo-story-wrap .wpo-story-item .wpo-story-img-wrap::before,
+    .wpo-couple-section-s3 .couple-area .couple-item .couple-img::after {
+        border-color: $theme-color-12;
+    }
+
+    .wpo-contact-section .wpo-contact-section-wrapper .wpo-contact-form-area,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text h2,
+    .wpo-blog-single-section .post blockquote:before,
+    .wpo-fun-fact-section .wpo-fun-fact-grids,
+    .wpo-fun-fact-section-s2 .wpo-fun-fact-grids,
+    .wpo-contact-section .wpo-contact-section-wrapper .wpo-contact-form-area .form-control,
+    .wpo-contact-section-s2 .wpo-contact-section-wrapper .wpo-contact-form-area .form-control,
+    .wpo-team-section .wpo-team-wrap .wpo-team-item .wpo-team-img:before,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item,
+    .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text,
+    .wpo-couple-section-s2 .couple-area .col:first-child .couple-item,
+    .wpo-site-footer .wpo-upper-footer::before {
+        border-color: transparentize($theme-color-12, .6);
+    }
+
+    .wpo-header-style-3 .navigation.sticky-on,
+    .wpo-contact-section .wpo-contact-section-wrapper,
+    .wpo-contact-section-s2 .wpo-contact-section-wrapper,
+    .wpo-service-details-text-3 {
+        background-color: darken($theme-color-12, 6%);
+    }
+
+    .wpo-pricing-section-s2 .wpo-section-title h2,
+    .wpo-site-footer .wpo-lower-footer .copyright a {
+        color: $dark-gray;
+    }
+
+    .wpo-blog-single-section .tag-share .tag a:hover {
+        color: $white;
+    }
+
+    @media (max-width: 991px) {
+        .wpo-site-header #navbar {
+            background: darken($theme-color-12, 2%);
+        }
+
+        .wpo-site-header #navbar>ul .menu-item-has-children>a:before {
+            background: none !important;
+        }
+
+        .wpo-site-header #navbar ul li a:hover,
+        .wpo-site-header #navbar ul li a:focus {
+            color: $white;
+        }
+    }
+
+    .wpo-blog-single-section .tag-share-s2 .tag a {
+        background: none !important;
+    }
+
+}

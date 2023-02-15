@@ -1,0 +1,49 @@
+
+/*--------------------------------------------------------------
+16. wpo-shop-page
+--------------------------------------------------------------*/
+.wpo-shop-page {
+	.wpo-product-section{
+		padding: 0;
+		padding-left: 30px;
+
+		@media(max-width:991px){
+          padding-left: 0;
+		}
+		.wpo-product-img{
+			img{
+				width: 100%;
+			}
+		}
+
+		.wpo-product-wrap{
+			.wpo-product-item .wpo-product-text h3{
+			  @media(max-width:1399px){
+				font-size: 18px;
+			  }	
+			}
+		}
+	}
+	.sorting-section{
+		padding-bottom: 20px;
+		ul{
+			display: flex;
+			justify-content: space-between;
+			list-style: none;
+			align-items: center;
+			flex-wrap: wrap;
+
+			li{
+				margin: 10px 0;
+			}
+		}
+
+		.nice-select {
+			ul{
+				display: block;
+			}
+		}
+
+	}
+}
+

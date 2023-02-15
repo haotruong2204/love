@@ -1,0 +1,152 @@
+/*--------------------------------------------------------------
+4. wpo-footer
+--------------------------------------------------------------*/
+.wpo-site-footer {
+    position: relative;
+    font-size: 15px;
+    overflow: hidden;
+    padding: 80px 0;
+    background: transparentize($theme-primary-color, .9);
+
+    @media(max-width:991px) {
+        padding: 50px 0;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    p {
+        color: $white;
+        margin-bottom: 0;
+    }
+
+    li {
+        color: $white;
+    }
+
+    .container {
+        position: relative;
+    }
+
+    .logo {
+        font-weight: 450;
+        font-size: 40px;
+        line-height: 51px;
+        color: #fff;
+    }
+
+    .footer-link {
+        margin: 30px 0;
+
+        ul {
+            display: flex;
+            justify-content: center;
+
+            @include media-query(767px) {
+                flex-wrap: wrap;
+            }
+
+            li {
+                padding: 0 20px;
+                position: relative;
+
+                @media(max-width:767px) {
+                    padding: 0 10px;
+                }
+
+                &:before {
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 6px;
+                    height: 6px;
+                    background: $theme-primary-color;
+                    content: "";
+                    border-radius: 50%;
+
+                    @media(max-width:767px) {
+                        left: -2px;
+                    }
+                }
+
+                &:first-child {
+                    &:before {
+                        display: none;
+                    }
+                }
+
+                a {
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 26px;
+                    text-transform: uppercase;
+                    color: $text-color;
+
+                    @include media-query(767px) {
+                        font-size: 14px;
+                    }
+
+                    &:hover {
+                        color: $theme-primary-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .link-widget {
+        overflow: hidden;
+
+        ul {
+            display: flex;
+            justify-content: center;
+
+            li {
+                position: relative;
+
+                a {
+                    display: block;
+                    width: 40px;
+                    height: 40px;
+                    text-align: center;
+                    line-height: 42px;
+                    background: $white;
+                    color: $theme-primary-color-s2;
+                    font-size: 15px;
+                    border-radius: 50%;
+
+                    &:hover {
+                        background: $theme-primary-color;
+                        color: $white;
+                    }
+                }
+            }
+
+            li+li {
+                margin-left: 15px;
+            }
+        }
+    }
+
+    .copyright {
+        margin-top: 50px;
+
+        @media(max-width:767px) {
+            margin-top: 30px;
+        }
+
+        p {
+            color: #909090;
+
+            @media(max-width:767px) {
+                font-size: 14px;
+            }
+
+            a {
+                color: #909090;
+            }
+        }
+    }
+}

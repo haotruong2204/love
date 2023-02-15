@@ -1,0 +1,66 @@
+/*---------------------------
+	Fonts
+----------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+  font-family: 'monallesia';
+  src: url('../fonts/monallesiascript.woff2') format('woff2'),
+       url('../fonts/monallesiascript.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'monallesia';
+  src: url('../fonts/monallesiascript.woff2') format('woff2'),
+       url('../fonts/monallesiascript.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+// fonts
+$base-font-size: 15;
+$base-font: 'Jost', sans-serif;
+$heading-font: 'monallesia';
+
+
+
+// color
+$dark-gray: #323232;
+$body-color: #848892;
+$white: #fff;
+$light: #8188a9;
+$black: #000;
+$small-black: #333;
+$cyan: #848892;
+
+$theme-primary-color: #D4B0A5;
+$theme-primary-color-s2: #939580;
+$body-bg-color: #fff;
+$section-bg-color: #edf3f8;
+$section-bg-color-s2: #FDFDFD;
+$text-color: #525252;
+$text-light-color: #7b7b7b;
+$heading-color: $dark-gray;
+$border-color: #F3ECE9;
+$border-color-s2: #e4ebf2;
+
+
+// change-color
+
+$theme-color-2:#835845;
+$theme-color-3:#1e8267;
+$theme-color-4:#de5ca2;
+$theme-color-5:#d9ba91;
+$theme-color-6:#99337f;
+$theme-color-7:#18A7B5;
+$theme-color-8:#668c25;
+$theme-color-9:#ff8051;
+$theme-color-10:#dd6673;
+$theme-color-11:#d58675;
+$theme-color-12:#b19a56;
