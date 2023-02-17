@@ -319,6 +319,7 @@ button {
   margin: 5px 0 0 0;
   text-align: left;
   display: block;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .contact-validation-active #c-loader,
