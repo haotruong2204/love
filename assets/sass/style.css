@@ -123,6 +123,13 @@ Version:        1.0.0
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'themysion';
+  src: url('../fonts/themysion-2ojko.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* 1.1	Theme Reset Style */
 html {
   font-size: 15px;
@@ -315,13 +322,15 @@ button {
 }
 
 .contact-validation-active #c-loader,
-.contact-validation-active #loader {
+.contact-validation-active #loader,
+.contact-validation-active #loader-qr {
   display: none;
   margin-top: 10px;
 }
 
 .contact-validation-active #c-loader i,
-.contact-validation-active #loader i {
+.contact-validation-active #loader i,
+.contact-validation-active #loader-qr i {
   font-size: 30px;
   font-size: 2rem;
   color: #D4B0A5;
@@ -331,8 +340,10 @@ button {
 }
 
 .contact-validation-active #success,
+.contact-validation-active #success-qr,
 .contact-validation-active #c-success,
 .contact-validation-active #c-error,
+.contact-validation-active #error-qr,
 .contact-validation-active #error {
   width: 100%;
   color: #fff;
@@ -344,6 +355,7 @@ button {
 
 @media (max-width: 767px) {
   .contact-validation-active #success,
+  .contact-validation-active #success-qr,
   .contact-validation-active #c-success,
   .contact-validation-active #c-error,
   .contact-validation-active #error {
@@ -352,6 +364,7 @@ button {
 }
 
 .contact-validation-active #c-success,
+.contact-validation-active #success-qr,
 .contact-validation-active #success {
   background-color: #009a00;
   border-left: 5px solid green;
@@ -359,6 +372,7 @@ button {
 }
 
 .contact-validation-active #c-error,
+.contact-validation-active #error-qr,
 .contact-validation-active #error {
   background-color: #ff1a1a;
   border-left: 5px solid red;
@@ -2141,6 +2155,7 @@ a.ui-button:active, .ui-button:active,
 
 .wpo-site-header .navbar-brand {
   position: relative;
+  margin-right: 0;
 }
 
 @media (max-width: 991px) {
@@ -2163,56 +2178,6 @@ a.ui-button:active, .ui-button:active,
 
 .wpo-site-header .brand-logo {
   padding: 0;
-}
-
-.wpo-site-header .brand-logo .navbar-brand {
-  margin-top: -35px;
-  padding-bottom: 0 !important;
-  top: 0;
-}
-
-@media (max-width: 1600px) {
-  .wpo-site-header .brand-logo .navbar-brand {
-    margin-top: -25px;
-  }
-}
-
-@media (max-width: 1199px) {
-  .wpo-site-header .brand-logo .navbar-brand {
-    margin-top: -15px;
-  }
-}
-
-@media (max-width: 991px) {
-  .wpo-site-header .brand-logo .navbar-brand {
-    margin-top: 0px;
-  }
-}
-
-.wpo-site-header .brand-logo .navbar-brand:before {
-  display: none;
-}
-
-.wpo-site-header .brand-logo .navbar-brand img {
-  max-width: 400px;
-}
-
-@media (max-width: 1600px) {
-  .wpo-site-header .brand-logo .navbar-brand img {
-    max-width: 320px;
-  }
-}
-
-@media (max-width: 1300px) {
-  .wpo-site-header .brand-logo .navbar-brand img {
-    max-width: 280px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .wpo-site-header .brand-logo .navbar-brand img {
-    max-width: 230px;
-  }
 }
 
 .wpo-site-header .social-info ul {
@@ -2967,7 +2932,6 @@ a.ui-button:active, .ui-button:active,
     display: block;
     color: #323232;
     position: relative;
-    text-transform: uppercase;
   }
 }
 
@@ -5796,7 +5760,7 @@ wpo-hero-slider-s4
   position: relative;
   font-size: 15px;
   overflow: hidden;
-  padding: 80px 0;
+  padding: 0 0 40px 0;
   background: rgba(212, 176, 165, 0.1);
 }
 
@@ -9746,6 +9710,7 @@ wpo-hero-slider-s4
 .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-contact-form-area select.form-control,
 .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-contact-form-area select.form-control {
   background: transparent url(../images/select-icon2.png) no-repeat calc(100% - 15px) center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-contact-form-area .radio-buttons,
@@ -10223,6 +10188,7 @@ wpo-hero-slider-s4
   margin: 0 auto;
   color: #828282;
   margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 @media (max-width: 575px) {
@@ -15046,6 +15012,14 @@ wpo-hero-slider-s4
   }
 }
 
+.wpo-site-header #navbar > ul > li > a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+.wpo-site-header #navbar > ul > li > a.navbar-brand {
+  font-weight: normal;
+}
+
 .wpo-blog-pg-section .post a.read-more {
   text-decoration: underline;
   color: #525252;
@@ -19549,5 +19523,33 @@ wpo-hero-slider-s4
 
 .color12 .wpo-blog-single-section .tag-share-s2 .tag a {
   background: none !important;
+}
+
+.themysion {
+  font-family: "themysion";
+  color: #dd6673;
+  font-size: 34px;
+}
+
+.wpo-site-header #navbar > ul > li > a.navbar-brand:before {
+  height: 0;
+}
+
+input::placeholder,
+textarea::placeholder,
+textarea {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.msg-happy {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  border-color: #D9D9D9;
+  width: 100%;
+  padding: 5px;
+  border-radius: 4px;
+  margin-top: 12px;
 }
 /*# sourceMappingURL=style.css.map */

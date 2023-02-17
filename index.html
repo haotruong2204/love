@@ -29,15 +29,8 @@
     <link href="assets/css/magnific-popup.css" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/animate.css" rel="stylesheet">
-    <link href="assets/css/owl.carousel.css" rel="stylesheet">
-    <link href="assets/css/owl.theme.css" rel="stylesheet">
-    <link href="assets/css/slick.css" rel="stylesheet">
-    <link href="assets/css/slick-theme.css" rel="stylesheet">
     <link href="assets/css/swiper.min.css" rel="stylesheet">
-    <link href="assets/css/nice-select.css" rel="stylesheet">
-    <link href="assets/css/owl.transitions.css" rel="stylesheet">
     <link href="assets/css/jquery.fancybox.css" rel="stylesheet">
-    <link href="assets/css/odometer-theme-default.css" rel="stylesheet">
     <link href="assets/css/jquery-ui.css" rel="stylesheet">
     <link href="assets/sass/style.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
@@ -87,20 +80,19 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-6 d-lg-none dl-block">
+                            <div class="col-md-6 col-8 d-lg-none dl-block text-center">
                                 <div class="navbar-header">
-                                    <a class="navbar-brand" href=""><img src="assets/images/logo.svg"
-                                            alt=""></a>
+                                    <a class="navbar-brand" href=""><span class="themysion">Hao Truong &&nbsp;&nbsp;Trang Nhung</span></a>
                                 </div>
                             </div>
                             <div class="col-lg-11 col-md-1 col-1">
                                 <div id="navbar" class="collapse navbar-collapse navigation-holder">
                                     <button class="menu-close"><i class="ti-close"></i></button>
                                     <ul class="nav navbar-nav mb-2 mb-lg-0">
-                                        <li><a href="#story">Hành trình tình yêu</a></li>
-                                        <li><a href="#gallery">Trạm khoảnh khắc</a></li>
-                                        <li><a href="#rsvp">Gửi lời chúc</a></li>
-                                        <li><a href="#timeline">Thời gian tổ chức</a></li>
+                                        <li><a href="#story">HÀNH TRÌNH TÌNH YÊU</a></li>
+                                        <li><a href="#gallery">TRẠM KHOẢNH KHẮC</a></li>
+                                        <li><a href="#rsvp">GỬI LỜI CHÚC</a></li>
+                                        <li><a href="#timeline">THỜI GIAN & ĐỊA ĐIỂM</a></li>
                                     </ul>
 
                                 </div><!-- end of nav-collapse -->
@@ -473,7 +465,7 @@
                                         <label for="not">Tiếc quá, tớ bận mất rồi</label>
                                     </p>
                                 </div>
-                                <form method="post" class="contact-validation-active" id="contact-form-main">
+                                <form class="contact-validation-active" id="contact-form-main">
                                     <div>
                                         <input type="text" class="form-control" name="name" id="name"
                                             placeholder="Họ Tên">
@@ -501,9 +493,25 @@
                                         </div>
                                     </div>
                                     <div class="clearfix error-handling-messages">
-                                        <div id="success">Thank you</div>
-                                        <div id="error"> Error occurred while sending email. Please try again later.
+                                        <div id="success"></div>
+                                    </div>
+                                </form>
+
+                                <form class="contact-validation-active d-none" id="contact-form-qr">
+                                    <img src="assets/images/qr.jpeg" alt="">
+                                    <div>
+                                        <input type="text" class="form-control" name="name" id="name-qr"
+                                            placeholder="Họ Tên">
+                                    </div>
+                                    <textarea name="msg" placeholder="Gửi lời yêu thương <3" class="msg-happy"></textarea> 
+                                    <div class="submit-area">
+                                        <button type="submit" class="theme-btn">Gửi lời chúc</button>
+                                        <div id="loader-qr" style="display:none">
+                                            <i class="ti-reload"></i>
                                         </div>
+                                    </div>
+                                    <div class="clearfix error-handling-messages">
+                                        <div id="success-qr" style="display:none"></div>
                                     </div>
                                 </form>
                             </div>
@@ -533,15 +541,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="footer-image">
-                            <a class="logo" href=""><img src="assets/images/logo.svg" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="footer-link">
-                            <ul>
-                                <li><a href="">Trang chủ</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                            </ul>
+                            <a class="logo" href=""><img src="assets/images/logo.png" alt=""></a>
                         </div>
                     </div>
                     <div class="col-12">

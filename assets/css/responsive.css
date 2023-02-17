@@ -2,6 +2,10 @@
   .desktop {
     display: none;
   }
+
+  .mobile img {
+    width: 15%;
+  }
 }
 
 @media (min-width: 767px) {

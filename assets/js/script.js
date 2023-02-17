@@ -11,8 +11,6 @@
     /*------------------------------------------
         = ALL ESSENTIAL FUNCTIONS
     -------------------------------------------*/
-
-
     // Toggle mobile navigation
     function toggleMobileNavigation() {
         var navbar = $(".navigation-holder");
@@ -1076,22 +1074,52 @@ wpo-service-active SLIDER
             submitHandler: function (form) {
                 $("#loader").show();
                 setTimeout(function () {
+                    const name = $("#name").val();
                     $("#loader").hide();
+                    console.log(name)
+                    $("#success").append(`Cảm ơn ${name} đã tới dự lễ thành hôn của chúng tớ`);
                     $("#success").slideDown("slow");
+                    form.reset();
                 }, 2000);
 
-                
                 setTimeout(function () {
                     $("#success").slideUp("slow");
-                }, 4000);
-
-                form.reset();
+                }, 10000);
             }
 
         });
     }
 
+    if ($("#contact-form-qr").length) {
+        $("#contact-form-qr").validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                },
+            },
 
+            messages: {
+                name: "Bạn tên chi đó, để mình tiện xưng hô :v",
+            },
+            
+            submitHandler: function (form) {
+                $("#loader-qr").show();
+                setTimeout(function () {
+                    const name = $("#name-qr").val();
+                    $("#loader-qr").hide();
+                    $("#success-qr").append(`Chúng tớ cảm ơn lời chúc của ${name} nhớ`);
+                    $("#success-qr").slideDown("slow");
+                    form.reset();
+                }, 2000);
+                
+                setTimeout(function () {
+                    $("#success-qr").slideUp("slow");
+                }, 10000);
+            }
+
+        });
+    }
     /*==========================================================================
         WHEN DOCUMENT LOADING
     ==========================================================================*/
@@ -1280,5 +1308,19 @@ wpo-service-active SLIDER
         }
     });
 
+    $('#not').on('click', function () {
+        if($(this).prop('checked')) {
+            $('#contact-form-main').hide()
+            $('#contact-form-qr').show()
+            $('#contact-form-qr').removeClass('d-none')
+        }
+    })
+
+    $("#attend").on('click', function () {
+        if($(this).prop('checked')) {
+            $('#contact-form-main').show()
+            $('#contact-form-qr').hide()
+        }
+    })
 
 })(window.jQuery);
