@@ -5224,8 +5224,8 @@ wpo-hero-slider-s4
 
 .wpo-hero-style-3 .slide-inner {
   margin: 0 auto;
-  width: 90%;
-  left: 5%;
+  width: 100%;
+  left: 0;
   top: 0;
 }
 

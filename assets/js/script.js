@@ -1063,59 +1063,29 @@ wpo-service-active SLIDER
                     required: true,
                     minlength: 2
                 },
-
-                email: "required",
-
                 phone: "required",
-
-                adress: "required",
-
                 guest: "required",
-
-                meal: "required",
-
-                date: "required",
-
-                what: "required",
-
-                service: "required",
-
             },
 
             messages: {
-                name: "Nhập tên đi cậu ơi",
-                email: "Nhập lại email đi câu êi",
-                phone: "Please enter your phone number",
-                adress: "Please enter your adress",
-                guest: "Bạn quên chọn người thương đi cùng à",
-                meal: "Please select your Meal Name",
-                date: "Please select your Date",
-                what: "Please select your Reason",
-                service: "Please select your Service"
+                name: "Bạn tên chi đó, để mình tiện xưng hô :v",
+                phone: "Để lại số điện thoại mình sẽ chủ động liên lạc để đưa bạn tới địa điểm tổ chức",
+                guest: "Đừng quên chọn người thương đi cùng chứ =))",
             },
-
+            
             submitHandler: function (form) {
-                $.ajax({
-                    type: "POST",
-                    url: "mail-contact.php",
-                    data: $(form).serialize(),
-                    success: function () {
-                        $("#loader").hide();
-                        $("#success").slideDown("slow");
-                        setTimeout(function () {
-                            $("#success").slideUp("slow");
-                        }, 3000);
-                        form.reset();
-                    },
-                    error: function () {
-                        $("#loader").hide();
-                        $("#error").slideDown("slow");
-                        setTimeout(function () {
-                            $("#error").slideUp("slow");
-                        }, 3000);
-                    }
-                });
-                return false; // required to block normal submit since you used ajax
+                $("#loader").show();
+                setTimeout(function () {
+                    $("#loader").hide();
+                    $("#success").slideDown("slow");
+                }, 2000);
+
+                
+                setTimeout(function () {
+                    $("#success").slideUp("slow");
+                }, 4000);
+
+                form.reset();
             }
 
         });

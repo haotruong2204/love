@@ -4,10 +4,25 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="wpOceans">
+    <meta name="author" content="haotruong">
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
-    <title> LoveLove - Wedding & Wedding Planner HTML5 Template</title>
+    <meta http-equiv="Cache-control" content="public">
+    <title> Nhung Hảo | haotruong.dev </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-language" content="vi" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta name="description" content="">
+    <meta name="Keywords" content="đám cưới hảo và nhung">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noindex,nofollow">
+    <meta name="msnbot" content="all,index,follow">
+    <meta property="fb:app_id" content="437508021125305" /> 
+    <meta property="og:title" content="">
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="">
+    <meta property="og:description" content="">
+    <link rel="canonical" href="" />
+
     <link href="assets/css/themify-icons.css" rel="stylesheet">
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/flaticon.css" rel="stylesheet">
@@ -25,6 +40,7 @@
     <link href="assets/css/odometer-theme-default.css" rel="stylesheet">
     <link href="assets/css/jquery-ui.css" rel="stylesheet">
     <link href="assets/sass/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Allura&display=swap" rel="stylesheet">
@@ -165,8 +181,12 @@
                         </div>
                         <div class="col col-md-2 col-12">
                             <div class="middle-couple-shape wow fadeInUp" data-wow-duration="1000ms">
-                                <div class="shape">
+                                <div class="shape desktop">
                                     <img src="assets/images/couple/shape.png" alt="">
+                                    <img src="assets/images/couple/shape-4.png" alt="">
+                                </div>
+                                <div class="shape mobile">
+                                    <img src="assets/images/couple/shape-mobile.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -459,8 +479,8 @@
                                             placeholder="Họ Tên">
                                     </div>
                                     <div>
-                                        <input type="email" class="form-control" name="email" id="email"
-                                            placeholder="Địa chỉ Email">
+                                        <input type="text" class="form-control" name="phone" id="phone"
+                                            placeholder="Số điện thoại">
                                     </div>
                                    
                                     <div>
@@ -476,7 +496,7 @@
                                     </div>
                                     <div class="submit-area">
                                         <button type="submit" class="theme-btn">Gửi lời chúc</button>
-                                        <div id="c-loader">
+                                        <div id="loader">
                                             <i class="ti-reload"></i>
                                         </div>
                                     </div>
