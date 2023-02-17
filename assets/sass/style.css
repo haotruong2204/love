@@ -1018,6 +1018,7 @@ a.ui-button:active, .ui-button:active,
   position: fixed;
   z-index: 999999;
   overflow: hidden;
+  top: 0;
 }
 
 .preloader .vertical-centered-box {
@@ -19552,5 +19553,21 @@ textarea {
   padding: 5px;
   border-radius: 4px;
   margin-top: 12px;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #eee;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #333;
 }
 /*# sourceMappingURL=style.css.map */
