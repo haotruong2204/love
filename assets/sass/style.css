@@ -553,7 +553,7 @@ a.ui-button:active, .ui-button:active,
 @media (max-width: 575px) {
   .wpo-section-title h4,
   .wpo-section-title-s2 h4 {
-    font-size: 18px;
+    font-size: 32px;
   }
 }
 
@@ -601,7 +601,7 @@ a.ui-button:active, .ui-button:active,
 @media (max-width: 767px) {
   .wpo-section-title h2,
   .wpo-section-title-s2 h2 {
-    font-size: 32px;
+    font-size: 16px;
     line-height: 40px;
   }
 }
@@ -609,7 +609,7 @@ a.ui-button:active, .ui-button:active,
 @media (max-width: 575px) {
   .wpo-section-title h2,
   .wpo-section-title-s2 h2 {
-    font-size: 22px;
+    font-size: 14px;
     margin-top: 0;
   }
 }
@@ -7350,7 +7350,7 @@ wpo-hero-slider-s4
   .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-section-title h4,
   .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-section-title h4,
   .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-section-title h4 {
-    font-size: 25px;
+    font-size: 26px;
   }
 }
 
@@ -7360,7 +7360,7 @@ wpo-hero-slider-s4
   .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-section-title h4,
   .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-section-title h4,
   .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-section-title h4 {
-    font-size: 18px;
+    font-size: 26px;
   }
 }
 
@@ -9270,7 +9270,7 @@ wpo-hero-slider-s4
 @media (max-width: 575px) {
   .wpo-story-section .wpo-story-item .wpo-story-content .wpo-story-content-inner h2,
   .wpo-story-section-s2 .wpo-story-item .wpo-story-content .wpo-story-content-inner h2 {
-    font-size: 20px;
+    font-size: 28px;
     margin-bottom: 10px;
   }
 }
@@ -9303,7 +9303,7 @@ wpo-hero-slider-s4
 .wpo-story-section .wpo-story-item .wpo-story-content .wpo-story-content-inner p,
 .wpo-story-section-s2 .wpo-story-item .wpo-story-content .wpo-story-content-inner p {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 29px;
   color: #525252;
   margin-bottom: 0;
@@ -9865,7 +9865,7 @@ wpo-hero-slider-s4
   .wpo-contact-section-s3 .wpo-contact-section-wrapper .wpo-section-title h4,
   .wpo-contact-section-s4 .wpo-contact-section-wrapper .wpo-section-title h4,
   .wpo-contact-section-s5 .wpo-contact-section-wrapper .wpo-section-title h4 {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 
