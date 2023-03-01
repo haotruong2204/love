@@ -1,0 +1,185 @@
+
+/* Snow place to be on a cold day in Tesco */
+
+[class^="field-"] {
+  color: #dd6673;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 9999;
+
+  /* Defined by JS - Shift initial position off-screen and encourage hardware acceleration */
+/*   transform: translate3d(0, -8rem, 0); */
+
+  /* Flex used to space the svg flakes evenly horizontally. Plays nicely at inbetween widths */
+  display:flex;
+  justify-content: space-between;
+
+  /* Allow for multi rows */
+  flex-wrap: wrap;
+}
+
+
+
+    /* Generic styling of flakes, default animation and transform */
+
+[class^="field_flake"] {
+  fill: currentColor;
+  pointer-events: none; 
+  will-change: transform;
+  display: inline-block;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  animation: falling;
+  animation-iteration-count: infinite;
+}
+/* Disable if user prefers */
+@media (prefers-reduced-motion: reduce) {
+  [class^="field_flake"] {
+    animation: none;
+    display: none;
+  }
+}
+
+
+/* Filter is completely optional, and it may cause performance issues on low powered GPUs. */
+
+[class^="field_flake"]:nth-of-type(3n+0) {
+  filter: drop-shadow(0 1px 1px rgba(0,0,0,.125));
+}
+[class^="field_flake"]:nth-of-type(3n+1) {
+  filter: blur(1px);
+}
+
+
+/* Animation durations are calculated to be multiples of each other +/- a few seconds for initial delays */
+
+[class^="field_flake"]:nth-child(3n+0) {
+  animation-duration: 12s;
+}
+[class^="field_flake"]:nth-child(3n+1) {
+  animation-duration: 18s;
+}
+[class^="field_flake"]:nth-child(3n+2) {
+  animation-duration: 24s;
+}
+
+
+/* Set individual origins */
+
+[class^="field_flake"]:nth-child(5n+0) {
+  transform-origin: -5% -5%;
+}
+[class^="field_flake"]:nth-child(5n+1) {
+  transform-origin: 15% 0;
+}
+[class^="field_flake"]:nth-child(5n+2) {
+  transform-origin: 0 -30%;
+}
+[class^="field_flake"]:nth-child(5n+3) {
+  transform-origin: -30% 30%;
+}
+[class^="field_flake"]:nth-child(5n+4) {
+  transform-origin: -100% -100%;
+}
+
+/* Keep leftmost snowflake close to the left edge */
+
+[class^="field_flake"]:first-child {
+  transform-origin: 60% 40%;
+}
+
+
+/* Delay the starting times */
+
+[class^="field_flake"]:nth-of-type(5n+0) {
+  animation-delay: 0.5s;
+}
+[class^="field_flake"]:nth-of-type(5n+1) {
+  animation-delay: 1.5s;
+}
+[class^="field_flake"]:nth-of-type(5n+2) {
+  animation-delay: 3s;
+}
+[class^="field_flake"]:nth-of-type(5n+3) {
+  animation-delay: 4.5s;
+}
+[class^="field_flake"]:nth-of-type(5n+4) {
+  animation-delay: 6s;
+}
+/* In case of flex wrap, the last flake starts immediately */
+[class^="field_flake"]:last-child {
+  animation-delay: 0s;
+}
+
+
+/* Tweak timing functions - a tad more random */
+
+[class^="field_flake"]:nth-of-type(6n+0) {
+  animation-timing-function: ease-in-out;
+}
+[class^="field_flake"]:nth-of-type(6n+1) {
+  animation-timing-function: ease-out;
+}
+[class^="field_flake"]:nth-of-type(6n+2) {
+  animation-timing-function: ease;
+}
+[class^="field_flake"]:nth-of-type(6n+3) {
+  animation-timing-function: ease-in;
+}
+[class^="field_flake"]:nth-of-type(6n+4) {
+  animation-timing-function: linear;
+}
+[class^="field_flake"]:nth-of-type(6n+5) {
+  animation-timing-function: cubic-bezier(0.2, 0.3, 0.8, 0.9);
+}
+
+
+/* Tweak opacity - more randomness */
+
+[class^="field_flake"]:nth-of-type(7n+0) {opacity: 0.6;}
+[class^="field_flake"]:nth-of-type(7n+1) {opacity: 0.9;}
+[class^="field_flake"]:nth-of-type(7n+2) {opacity: 0.5;}
+[class^="field_flake"]:nth-of-type(7n+4) {opacity: 0.8;}
+[class^="field_flake"]:nth-of-type(7n+6) {opacity: 0.7;}
+
+
+
+/* Animation for all snowflakes */
+
+@keyframes falling-christmas {
+  from {
+    transform: translate3d(0, 0, 0) rotate(0deg) scale(0.8);
+  }
+  to {
+    transform: translate3d(0, 120vh, 0) rotate(360deg) scale(1.2);
+  }
+}
+
+@keyframes falling-starwars {
+  from {
+    transform: translate3d(0, 0, 0) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translate3d(0, 0, 0) rotate(0deg) scale(1.3);
+  }
+  to {
+    transform: translate3d(0, 140vh, 0) rotate(460deg) scale(0.7);
+  }
+}
+
+@keyframes falling-halloween {
+  from {
+    transform: translate3d(0, 0, 0) rotate(-60deg) scale(0.8);
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  to {
+    transform: translate3d(0, 140vh, 0) rotate(300deg) scale(1);
+    opacity: 0;
+  }
+}
