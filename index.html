@@ -35,6 +35,7 @@
     <link href="assets/sass/style.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
     <link href="assets/css/rain-heart.css" rel="stylesheet">
+    <link href="assets/css/audio.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Allura&display=swap" rel="stylesheet">
@@ -671,20 +672,47 @@
         </div>
     </div>
     <!-- end of page-wrapper -->
-
-    <audio id="myAudio" controls style="display:none">
-        <source src="assets/Anh-nang-cua-anh-Duc-Phuc.mp3" type="audio/mpeg">
-    </audio>
-
-    <script>
-       navigator.mediaDevices.getUserMedia({ audio: true }).then(function (stream) {
-        
-        var x = document.getElementById("myAudio"); 
-        x.play();
-        stream.getTracks().forEach(function (track) { track.stop(); });
-     });
-    </script>
-
+    <div id="player">
+        <div id="player-track">
+        <div id="album-name"></div>
+        <div id="track-name"></div>
+        <div id="track-time">
+            <div id="current-time"></div>
+            <div id="track-length"></div>
+        </div>
+        <div id="s-area">
+            <div id="ins-time"></div>
+            <div id="s-hover"></div>
+            <div id="seek-bar"></div>
+        </div>
+        </div>
+        <div id="player-content">
+        <div id="album-art">
+            <img src="assets/images/khoanhkhac1.jpg" class="active" id="_1">
+            <img src="assets/images/khoanhkhac2.jpg" id="_2">
+            <img src="assets/images/khoanhkhac3.jpg" id="_3">
+            <img src="assets/images/khoanhkhac4.jpg" id="_4">
+            <div id="buffer-box">Buffering ...</div>
+        </div>
+        <div id="player-controls">
+            <div class="control">
+            <div class="button" id="play-previous">
+                <i class="ti-arrow-circle-left"></i>
+            </div>
+            </div>
+            <div class="control">
+            <div class="button" id="play-pause-button">
+                <i class="ti-control-play"></i>
+            </div>
+            </div>
+            <div class="control">
+            <div class="button" id="play-next">
+                <i class="ti-arrow-circle-right"></i>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
     <!-- All JavaScript files
     ================================================== -->
     <script src="assets/js/jquery.min.js"></script>
@@ -696,6 +724,7 @@
     <!-- Custom script for this template -->
     <script src="assets/js/script.js"></script>
     <script src="assets/js/rain-heart.js"></script>
+    <script src="assets/js/audio.js"></script>
 </body>
 
 </html>
