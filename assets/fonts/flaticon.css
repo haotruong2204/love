@@ -2,6 +2,7 @@
 @font-face {
   font-family: "flaticon";
   src: url("./flaticon.ttf?e958c5f1ae25f44f53062aaba546e178") format("truetype"), url("./flaticon.woff?e958c5f1ae25f44f53062aaba546e178") format("woff"), url("./flaticon.woff2?e958c5f1ae25f44f53062aaba546e178") format("woff2"), url("./flaticon.eot?e958c5f1ae25f44f53062aaba546e178#iefix") format("embedded-opentype"), url("./flaticon.svg?e958c5f1ae25f44f53062aaba546e178#flaticon") format("svg");
+  font-display: swap;
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {

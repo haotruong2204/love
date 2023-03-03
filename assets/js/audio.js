@@ -29,6 +29,7 @@ $(function () {
     tFlag = false,
     albums = [
       "Ánh Nắng Của Anh",
+      "Hơn Cả Yêu",
     ],
     trackNames = [
       "Đức Phúc",
@@ -36,7 +37,7 @@ $(function () {
     albumArtworks = ["_1", "_2"],
     trackUrl = [
       "https://github.com/haotruong2204/haonhung/raw/main/app/assets/Anh-nang-cua-anh-Duc-Phuc.mp3",
-      "https://github.com/haotruong2204/haonhung/raw/main/app/assets/Anh-nang-cua-anh-Duc-Phuc.mp3",
+      "https://github.com/haotruong2204/haonhung/raw/main/app/assets/hon-ca-yeu.mp3",
     ],
     playPreviousTrackButton = $("#play-previous"),
     playNextTrackButton = $("#play-next"),
