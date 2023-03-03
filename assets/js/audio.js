@@ -33,10 +33,8 @@ $(function () {
     trackNames = [
       "Đức Phúc",
     ],
-    albumArtworks = ["_1", "_2", "_3", "_4"],
+    albumArtworks = ["_1", "_2"],
     trackUrl = [
-      "https://github.com/haotruong2204/haonhung/raw/main/app/assets/Anh-nang-cua-anh-Duc-Phuc.mp3",
-      "https://github.com/haotruong2204/haonhung/raw/main/app/assets/Anh-nang-cua-anh-Duc-Phuc.mp3",
       "https://github.com/haotruong2204/haonhung/raw/main/app/assets/Anh-nang-cua-anh-Duc-Phuc.mp3",
       "https://github.com/haotruong2204/haonhung/raw/main/app/assets/Anh-nang-cua-anh-Duc-Phuc.mp3",
     ],
