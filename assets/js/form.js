@@ -2,6 +2,7 @@
   "use strict";
 
   var urlResponse = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSfUwYzBZygFj6yvAXnsrFRwy7CZ4uV2Olt-HU_9ozxHnRkONQ/formResponse';
+  var urlResponseQr = 'https://docs.google.com/forms/d/e/1FAIpQLScA7S58OuVfPIkoeQnJngx1xpr68q7ihhL_jUXK4Be_OtHJ9g/formResponse';
 
   if ($("#contact-form-main").length) {
     $("#contact-form-main").validate({
@@ -35,64 +36,70 @@
               type: "POST",
               url: urlResponse,
               data: indexed_array,
-              crossDomain: true,
-              dataType: 'jsonp',
-              success: function () {
-                $("#loader").show();
-                setTimeout(function () {
-                    const name = $("#name").val();
-                    $("#loader").hide();
-                    $("#success").append(`Chúng tớ cảm ơn lời chúc của ${name} nhớ`);
-                    $("#success").slideDown("slow");
-                    form.reset();
-                }, 2000);
-      
-                setTimeout(function () {
-                    $("#success").slideUp("slow");
-                }, 10000);
-              },
-              error: function () {
-                  $("#loader").hide();
-                  $("#error").slideDown("slow");
-                  setTimeout(function () {
-                      $("#error").slideUp("slow");
-                  }, 3000);
-              }
+              dataType:'jsonp',
           });
-          return false;
-        }
+          $("#loader").show();
+          setTimeout(function () {
+              const name = $("#name").val();
+              $("#loader").hide();
+              $("#success").append(`Chúng mình đã nhận được thông tin, cảm ơn ${name} đã tham dự cùng bọn mình`);
+              $("#success").slideDown("slow");
+              form.reset();
+          }, 2000);
 
+          setTimeout(function () {
+              $("#success").slideUp("slow");
+          }, 10000);
+        }
     });
   }
 
   if ($("#contact-form-qr").length) {
     $("#contact-form-qr").validate({
         rules: {
-            name: {
-                required: true,
-                minlength: 2
-            },
+          name: {
+            required: true,
+            minlength: 2
+          },
+          msg: "required",
         },
 
         messages: {
-            name: "Bạn tên chi đó, để mình tiện xưng hô :v",
+          name: "Bạn tên chi đó, để mình tiện xưng hô :v",
+          msg: "Người đừng lặng im đến thế, hãy để lại vài lời với chúng mình điiiiiii",
         },
 
         submitHandler: function (form) {
-            $("#loader-qr").show();
-            setTimeout(function () {
-              const name = $("#name-qr").val();
-              $("#loader-qr").hide();
-              $("#success-qr").append(`Chúng tớ cảm ơn lời chúc của ${name} nhớ`);
-              $("#success-qr").slideDown("slow");
-              form.reset();
-            }, 2000);
+          var unindexed_array_qr = $('.contact-qr').map(function() {
+            return {
+              code: $(this).attr('code'), value : $(this).val()
+            }
+          }).get();
+          var indexed_array_qr = {};
+          $.map(unindexed_array_qr, function(n, i){
+            indexed_array_qr[n['code']] = n['value'];
+          });
 
-            setTimeout(function () {
-              $("#success-qr").slideUp("slow");
-            }, 10000);
+          $.ajax({
+            type: "POST",
+            url: urlResponseQr,
+            data: indexed_array_qr,
+            dataType:'jsonp',
+          });
+
+          $("#loader-qr").show();
+          setTimeout(function () {
+            const name = $("#name-qr").val();
+            $("#loader-qr").hide();
+            $("#success-qr").append(`Chúng mình đã nhân được lời chúc của bạn, cảm ơn ${name} nhớ`);
+            $("#success-qr").slideDown("slow");
+            form.reset();
+          }, 2000);
+
+          setTimeout(function () {
+            $("#success-qr").slideUp("slow");
+          }, 10000);
         }
-
     });
   }
 
