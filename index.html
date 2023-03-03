@@ -549,16 +549,16 @@
                                 </div>
                                 <form class="contact-validation-active" id="contact-form-main">
                                     <div>
-                                        <input type="text" class="form-control" name="name" id="name"
+                                        <input type="text" class="form-control contact-main" name="name" code="entry.403600033" id="name"
                                             placeholder="Họ Tên">
                                     </div>
                                     <div>
-                                        <input type="text" class="form-control" name="phone" id="phone"
+                                        <input type="tel" pattern="\+?\(?\d{2,4}\)?[\d\s-]{3,}" class="form-control contact-main" code="entry.1049666205" name="phone" id="phone"
                                             placeholder="Số điện thoại">
                                     </div>
 
                                     <div>
-                                        <select name="guest" class="form-control">
+                                        <select name="guest" code="entry.640985933" class="form-control contact-main">
                                             <option disabled="disabled" selected>Người thương</option>
                                             <option>Tớ đi một mình</option>
                                             <option>1 người thương</option>
@@ -735,6 +735,7 @@
     <script src="assets/js/script.min.js"></script>
     <script src="assets/js/rain-heart.min.js"></script>
     <script src="assets/js/audio.min.js"></script>
+    <script src="assets/js/form.js"></script>
 </body>
 
 </html>
