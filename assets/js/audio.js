@@ -178,6 +178,7 @@ $(function () {
       currArtwork = albumArtworks[currIndex];
 
       audio.src = trackUrl[currIndex];
+      audio.preload = "none";
 
       nTime = 0;
       bTime = new Date();
